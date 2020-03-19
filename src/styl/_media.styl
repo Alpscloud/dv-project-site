@@ -105,6 +105,11 @@
 	// Form
 	.form__img
 		display none
+		
+
+
+	.sect__contacts
+		padding 120px 0
 
 +max-screen(1100px)
 	.gutters
@@ -175,6 +180,41 @@
 				font-size 18px
 				
 
+
+	.footer
+		&__top
+			padding 35px 0
+		&__logo
+			max-width 100%
+			margin-bottom 35px
+		&__sharing
+			width 100%
+			
+		&__menus
+			margin-left 0
+			margin-right 0
+			margin-bottom 35px
+			
+			display flex
+			justify-content flex-start
+			
+		&__menu
+			margin-bottom 0
+			margin-right 60px
+			&:last-child
+				margin-right 0
+		
+
+				
+	.footer__bottom
+		font-size 10px
+		.row
+			flex-wrap wrap
+			
+	.copyright
+		max-width 100%
+		margin-top 15px
+		
 
 				
 +max-screen(1000px)
@@ -446,6 +486,24 @@
 		
 	.sect__form
 		padding 80px 0
+		
+
+	// Contacts
+	.sect__contacts
+		padding-top 80px
+		padding-bottom 0
+		
+	.map__wrapper
+		width 100%
+		height 400px
+		position relative
+		left auto
+		top auto
+		
+	.contacts-half
+		max-width 100%
+		width 100%
+		margin-bottom 80px
 		
 +max-screen(900px)
 	// Promo
@@ -805,6 +863,52 @@
 
 	.btn-lg
 		font-size 14px
+		
+
+	// Contacts
+	.sect__contacts
+		padding-top 35px
+		
+	.contacts-half
+		margin-bottom 35px
+		padding-right 0
+		
+	.map__wrapper
+		height 240px
+		
+
+
+	.logo-footer
+		margin-right 10px
+		img
+			width 65px
+	.footer
+		&__top
+			padding 30px 0
+		&__logo
+			margin-bottom 15px
+			&--text
+				p
+					font-size 12px
+				&-title
+					font-size 12px
+					margin-bottom 5px
+			
+		&__sharing
+			display none
+			
+		&__menus
+			margin-bottom 0
+			
+			display flex
+			flex-direction column
+			justify-content flex-start
+			
+		&__menu
+			margin-bottom 12px
+			&:last-child
+				margin-bottom 0
+		
 		
 		
 
