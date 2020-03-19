@@ -9,3 +9,200 @@
 +min-screen-height(minHeight)
 */
 
++max-screen(1100px)
+	// Header
+	.header__nav
+		margin-left 15px
+	.nav
+		margin-right 15px
+		
+		li
+			margin-right 20px
+			
+	.logo
+		font-size 12px
+		max-width 260px
+		span
+			margin-left 10px
+			
+	// Promo
+	.sect__promo
+		min-height auto
+		padding-top 80px
+		
+	.promo__content
+		padding-right 60px
+			
++max-screen(1000px)
+	// Header
+	.header
+		z-index 5
+		&-mobile-info
+			display block
+		&-mobile-link
+			display inline-block
+		&__top
+			display none
+			
+		&__row
+			padding-right 80px
+			
+		&__nav
+			position absolute
+			top 0
+			left 0
+			width 100%
+			z-index 5
+			background-color $light-color
+			margin-left 0
+			padding-left 15px
+			padding-right 15px
+			// min-height 100vh
+			padding-bottom 80px
+			display none
+			flex none
+			.row
+				flex-wrap wrap
+				flex-direction column
+				align-items flex-start
+			
+			.header__contacts
+				background-color transparent
+				order 1
+				padding-left 0
+				padding-right 0
+				
+			.nav
+				order 2
+				width 100%
+				margin-right 0
+				background-color #fff
+				>
+					ul
+						margin-left -15px
+						margin-right -15px
+				li
+					display block
+					margin-right 0
+					text-align left
+					padding 15px
+					border-bottom 1px solid #E9E9E9
+					&:first-child
+						border-top 1px solid #E9E9E9
+				
+
+			.menu-item-has-children
+				background-color $alternate-color-bg 
+				> a
+					padding-right 0
+					&:after
+						display none
+				&:hover
+					.sublist
+						margin-top 10px
+				
+			.sublist
+				position relative
+				top auto
+				right auto
+				width 100%
+				margin-top 10px
+				opacity 1
+				visibility visible
+				box-shadow none
+				border none
+				background-color  $alternate-color-bg 
+				a
+					color $accent-color
+				li
+					border none !important
+					padding-left 15px
+					padding-top 0
+					padding-bottom 0
+					margin-bottom 12px
+					&:last-child
+						margin-bottom 0
+				&:before
+					display none
+	.phone-link
+		font-size 14px
+		
+		&:before
+			width 15px
+			height 15px
+			background-size 15px 15px
+			
+	.logo
+		display inline-block
+		max-width none
+		span
+			display none
+			
+	.btn__hamburger
+		display inline-block
+		
+
++max-screen(900px)
+	// Promo
+		
+
+		
+	.promo
+		&__row
+			flex-wrap wrap
+		&__content
+			width 100%
+			padding-right 0
+			margin-bottom 50px
+			
+		&__video
+			width 100%
+			
+
++max-screen(620px)
+	body
+		font-size 14px
+	// Promo
+	.sect__promo
+		padding 35px 0
+		
+	.promo__img
+		display none
+		
+	.title
+		font-size 24px
+	
+	.subtitle
+		margin-bottom 10px
+		
+	.commercial-proposal
+		&__text
+			margin-bottom 30px
+			
+	.promo
+		&__content
+			margin-bottom 25px
+		&__video
+			&--wrapper
+				margin-bottom 25px
+			&--notice
+				font-size 12px
+				line-height 18px
+				max-width 240px
+				text-align left
+				&:before
+					vertical-center()
+			
++max-screen(440px)
+	.btn
+		width 100%
+		font-size 14px
+		
+	// Promo
+	.sect__promo
+		padding-bottom 80px
+	.promo__video--wrapper
+		height 180px
+		
+		
+			

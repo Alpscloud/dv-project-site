@@ -42,21 +42,134 @@
 
 		<!-- Header -->
 		<header class="header">
-	<!-- NAV -->
-	<nav class="nav">
-	<ul class="nav__list">
-		<li class="nav__item"><a href="#" class="nav__link">Link 1</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 2</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 3</a></li>
-		<li class="nav__item"><a href="#" class="nav__link">Link 4</a></li>
+	<div class="header__top dark-bg">
+		<div class="container">
+			<div class="row align-horisontal-between align-vertical-center">
+				<p class="header__top--info ic-address">г.Москва, Дмитровское ш. 163А, к.2</p>
+				<p class="header__top--info ic-worktime">Пн-Сб с 9:00 до 20:00</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__bottom">
+		<div class="container">
+
+			<div class="row align-vertical-center align-horisontal-between header__row">
+				
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<img src="img/logo.svg" alt="" class="logo__img">
+					<span>Монтаж и обслуживание систем пожарной безопасности</span>
+				</a>
+				<!-- //Logo -->
+
+				<div class="header__nav js-nav">
+					<div class="row align-vertical-center align-horisontal-between">
+						<!-- NAV -->
+						<nav class="nav">
+	<ul>
+		<li class="menu-item-has-children">
+			<a href="#">Наши услуги</a>
+
+			<ul class="sublist">
+				<li><a href="#">Пожарная сигнализация</a></li>
+				<li><a href="#">Системы пожаротушения</a></li>
+				<li><a href="#">Огнезащитная обработка</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Выполненные работы</a></li>
+		<li><a href="#">О компании</a></li>
+		<li><a href="#">Контакты</a></li>
 	</ul>
 </nav>
-	<!-- //NAV -->
+						<!-- //NAV -->
+
+						<div class="header__contacts">
+							<a href="tel:+74998775692" class="phone-link">+7 499 877-56-92</a>
+							<a href="mailto:Aps@dv-p.ru" class="mail-link">Aps@dv-p.ru</a>
+						</div>
+
+
+						<div class="header-mobile-info">
+							<p class="header__top--info ic-address">г.Москва, Дмитровское ш. 163А, к.2</p>
+							<p class="header__top--info ic-worktime">Пн-Сб с 9:00 до 20:00</p>
+						</div>
+					</div>
+				</div>
+
+
+				<a href="#" class="header-mobile-link">Наши услуги</a>
+
+				<!-- Mobile menu btn -->
+				<button type="button" class="btn__hamburger js-open-mobile-menu-btn">
+					<span class="btn__hamburger--line"></span>
+					<span class="btn__hamburger--line"></span>
+					<span class="btn__hamburger--line"></span>
+				</button>
+				<!-- //Mobile menu btn -->
+				
+				
+			</div>
+
+		</div>
+		<!-- //container -->
+	</div>
+	
 </header>
 		<!-- //Header -->
 
 		<!-- Main -->
 		<main class="main">
+
+			<!-- Section promo -->
+			<section class="sect__promo color-bg">
+				<h2 class="w3c">&nbsp;</h2>
+
+				<div class="container">
+					<div class="promo">
+
+						<div class="promo__img">
+							<img src="img/promo-img.png" alt="">
+						</div>
+						<div class="row align-horisontal-between promo__row row-nowrap">
+
+							<div class="promo__content">
+								<h1 class="title">Монтаж и обслуживание систем пожарной безопасности</h1>
+								<p class="subtitle">Монтаж пожарной сигнализации и систем пожаротушения с гарантией прохождения проверки МЧС</p>
+
+								<div class="commercial-proposal">
+									<p class="commercial-proposal__text lighter-text-color">Получите коммерческое предложение на монтаж систем пожарной безопасности</p>
+
+									<a href="#" class="btn btn-with-img">
+										<span class="btn__content">
+											<img src="img/button-img.png" alt="Получить коммерческое предложение" class="btn__img">
+											<span class="btn__text">Получить коммерческое<br>предложение</span>
+										</span>
+									</a>
+
+								</div>
+							</div>
+
+							<div class="promo__video">
+								<div class="promo__video--wrapper">
+									<iframe src="https://www.youtube.com/embed/zD22D1ngWbE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+
+								<p class="promo__video--notice">Посмотрите видео о компании и наших услугах</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section promo -->
+
+			<!-- Section services -->
+			<section class="sect__services">
+				<h2 class="w3c">&nbsp;</h2>
+			</section>
+			<!-- //Section services -->
 		</main>
 		<!-- //Main -->
 

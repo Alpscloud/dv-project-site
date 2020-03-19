@@ -1,43 +1,36 @@
 .btn
 	display inline-block
-	padding 12px 15px
-	font 1em $Reg
-	line-height 1
-	text-align center
-	color $text-color
-	border 2px solid transparent
+	padding 11px 20px
+	position relative
 	transition all .17s ease-in-out
 	backface-visibility hidden
-	&__accent
-		background-color $accent-color
-	&__shadow
-		background-color transparent
-	&__dark
-		background-color $dark-color
-	&__close
+	font 16px $Reg
+	line-height 19px
+	background-color $accent-color
+	border-radius 9px
+	text-align left
+	color $light-color
+	&-with-img
+		padding-left 100px
+	&__img
+		display block
+		width 90px
+		height 80px
+		position absolute
+		left 0
+		vertical-center()
+		z-index 1
+	
+	&:hover
+		background-color darken($accent-color, 10%)
+	&-close
 		display inline-block
 		width 20px
 		height 20px
 		background url('../img/icons/svg/close-ic.svg') center center no-repeat
 		background-size 20px 20px
-		
-	&__search
-		&::-ms-clear
-			display none 
-			width 0
-			height 0
-		&::-ms-reveal
-			display none 
-			width 0
-			height 0
-		
-		&::-webkit-search-decoration,
-		&::-webkit-search-cancel-button,
-		&::-webkit-search-results-button,
-		&::-webkit-search-results-decoration
-			display none
-		
-	&__top
+
+	&-top
 		display none
 		border-radius 50%
 		width 40px
@@ -72,23 +65,25 @@
 		
 
 	&__hamburger
-		display inline-block
+		display none
 		flex none
-		width 50px
-		height 50px
-		border-radius 50%
-		background-color $accent-color
-		position relative
+		width 63px
+		height 63px
+		background-color #3A3939
 		transition background-color .17s ease-in-out
-		margin-left 15px
+		position absolute
+		right 15px
+		top 0
+		z-index 6
 		&--line
 			width 27px
 			height 2px
-			background-color $dark-color
+			background-color $light-color
 			display block
 			margin 6px auto
 			transition all 0.3s ease-in-out	
 		&.is-active
+			background-color $accent-color
 			.btn__hamburger--line
 				&:nth-child(1)
 					transform translateY(8px) rotate(45deg)

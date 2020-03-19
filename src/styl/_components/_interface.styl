@@ -1,0 +1,61 @@
+.ic
+	&-worktime,
+	&-address
+		&:before
+			pseudo()
+			width 15px
+			height 15px
+			position absolute
+			vertical-center()
+			left 0
+			background-repeat no-repeat
+			background-size 15px 15px
+			background-position 50% 50%
+			
+	&-worktime
+		&:before
+			background-image url('../img/icons/svg/clock.svg')
+	&-address
+		&:before
+			background-image url('../img/icons/svg/address.svg')
+			
+
+
+.phone-link
+	display inline-block
+	position relative
+	padding-left 25px
+	font 16px $Bold
+	line-height 1
+	color $dark-color
+	margin-bottom 8px
+	&:hover
+		color $accent-color
+	&:before
+		pseudo()
+		position absolute
+		vertical-center()
+		left 0
+		width 18px
+		height 18px
+		background url('../img/icons/svg/phone.svg') 50% 50% no-repeat / 18px 18px
+		
+.mail-link
+	display inline-block
+	position relative
+	padding-left 25px
+	font-size 14px
+	line-height 1
+	color #979797
+	&:hover
+		color $accent-color
+	&:before
+		pseudo()
+		position absolute
+		vertical-center()
+		left 0
+		width 15px
+		height 15px
+		background url('../img/icons/svg/email.svg') 50% 50% no-repeat / 15px 15px
+		
+		
