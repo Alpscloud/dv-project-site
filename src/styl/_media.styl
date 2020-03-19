@@ -9,6 +9,47 @@
 +min-screen-height(minHeight)
 */
 
++max-screen(1400px)
+	// Services
+	.services-additional__col
+		.img-decor
+			right -160px
+	
+	// Help
+	.help__img
+		margin-left 100px
+			
+
++max-screen(1200px)
+	// Services
+	.services-additional__col
+		padding-right 0
+		.img-decor
+			display none
+			
+	// Guarantee
+	.sect__guarantee
+		.container
+			padding-left 0
+			padding-right 0
+	.guarantee
+		&__block
+			width 100%
+			padding-top 0
+			padding-right 0
+			padding-bottom 0
+		&__content
+			padding-right 15px
+			padding-left 15px
+		&__information
+			position relative
+			left auto
+			top auto
+			width 100%
+			padding 35px 15px
+			margin-top 40px
+			
+
 +max-screen(1100px)
 	// Header
 	.header__nav
@@ -32,7 +73,22 @@
 		
 	.promo__content
 		padding-right 60px
-			
+		
+	// Services
+	.sect__services
+		&:before,
+		&:after
+			left -60%
+		&-additional
+			&:before
+				left -55%
+			&:after
+				left -60%
+				
+	// Help
+	.sect__help
+		padding 80px 0 110px
+				
 +max-screen(1000px)
 	// Header
 	.header
@@ -53,7 +109,7 @@
 			left 0
 			width 100%
 			z-index 5
-			background-color $light-color
+			background-color $white-color
 			margin-left 0
 			padding-left 15px
 			padding-right 15px
@@ -141,6 +197,68 @@
 	.btn__hamburger
 		display inline-block
 		
+	// Services
+	.sect__services
+		padding 80px 0 55px
+		&:before,
+		&:after
+			left 0
+		&-additional
+			padding 0
+			&:before,
+			&:after
+				display none
+			
+			
+	.title__col
+		max-width 100%
+		
+		margin-bottom 30px
+	.services__col
+		max-width 100%
+		padding 0
+		
+	.services
+		&__row,
+		&-additonal__row
+			flex-wrap wrap
+		
+	.service
+		&__item
+			color $white-color
+			
+	
+	.sect__services-additional
+		.container
+			padding-left 0
+			padding-right 0
+			
+	.services-additional
+		&__col
+			padding 40px 15px
+			max-width 100%
+			width 100%
+			
+	.services-additional__row
+		.title__col
+			max-width 100%
+			margin-bottom 0
+			padding 30px 15px
+			background $accent-color url('../img/backgrounds/pattern-bg.png') 50% 50% no-repeat / cover
+	
+		
+	// Help
+	.help
+		&__block
+			max-width 100%
+			&--content
+				max-width 540px
+		&__img
+			left auto
+			right 0
+			width 370px
+			height 250px
+		
 
 +max-screen(900px)
 	// Promo
@@ -192,11 +310,111 @@
 				text-align left
 				&:before
 					vertical-center()
+					
+
+	// Services
+	.sect__services
+		padding 35px 0 15px
+	.sect__title,
+	.sect__title--lg
+		font-size 24px
+		line-height 125%
+
+	.service
+		&__item
+			font-size 14px
+			line-height 18px
+			&--wrapper
+				padding 0 6px 20px 6px
+			&--ic
+				width 55px
+				height 55px
+				background-size 55px 55px
+				&-block
+					width 70px
+					height 70px
+					margin-bottom 20px
+					
+	.services__row
+		margin-left -6px
+		margin-right -6px
+		
+	.services-additional
+		&__col
+			padding 35px 15px
+	
+
+	.alarm-content
+		font-size 16px
+		line-height 150%
+		
+		ul
+			li
+				font-size 14px
+				
+
+	// Help
+	
+	.sect__help
+		padding 35px 0
+		
+	.help
+		&__block
+			&--content
+				text-align center
+				max-width 100%
+				p
+					font-size 14px
+					line-height 129%
+					margin-bottom 25px
+		&__contacts
+			margin-left 0
+			margin-top 15px
+			span
+				display none
+			&--row
+				flex-direction column
+				align-items center
+		
+		&__img
+			width 220px
+			height 150px
+			top auto
+			transform none
+			bottom -10px
+			right -50px
+			
+	.sect__title--gutter
+		margin-bottom 15px
+		
+
+	// Guarantee
+	.guarantee
+		&__block
+			img
+				max-width 200px
+		&__information
+			&--title
+				font-size 24px
+				line-height 30px
+				margin-bottom 20px
+				
+			&--item
+				h5
+					font-size 16px
+				&-ic
+					width 45px
+					height 45px
+					background-size 45px 45px
+					margin-right 30px
 			
 +max-screen(440px)
 	.btn
 		width 100%
 		font-size 14px
+		&__search
+			padding-top 11px
+			padding-bottom 11px
 		
 	// Promo
 	.sect__promo
