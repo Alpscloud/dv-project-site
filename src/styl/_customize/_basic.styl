@@ -93,10 +93,10 @@ img
 .gutters
 	padding $gutters
 .gutter
-	&__top
+	&-top
 		padding-top $gutter-top
-	&__bottom
-		padding-top $gutter-bottom
+	&-bottom
+		padding-bottom $gutter-bottom
 	
 .w3c
 	visibility hidden
@@ -108,6 +108,9 @@ img
 	height 100%
 	
 .sect
+	&__uptitle
+		font 24px
+		margin-bottom 20px
 	&__title
 		font 45px $Light
 		line-height 133%
@@ -120,6 +123,12 @@ img
 			line-height 109%
 		&--gutter
 			margin-bottom 25px
+			&-sm
+				margin-bottom 12px
+				
+	&__subtitle
+		color $light-text-color
+		margin-bottom 65px
 		
 
 

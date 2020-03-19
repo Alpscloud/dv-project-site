@@ -60,7 +60,8 @@
 		line-height 19px
 		
 // Services
-.sect__services
+.sect__services,
+.sect__benefits
 	position relative
 	background-size 0 0
 	overflow hidden
@@ -89,6 +90,7 @@
 	
 .title__col
 	max-width 400px
+
 .services
 	&__row
 		margin-left -17.5px
@@ -295,5 +297,501 @@
 				
 			&:last-child
 				margin-bottom 0
+
+
+// Documents
+.sect__documents
+	padding 130px 0
+	position relative
+	&:before
+		pseudo()
+		position absolute
+		top 0
+		height 100%
+		left 0
+		width 340px
+		background $accent-color url('../img/backgrounds/pattern-bg.png') 50% 50% no-repeat / cover
 		
+
+.documents
+	position relative
+	width 560px
+	padding-right 50px
+	&__img
+		position absolute
+		right 100%
+		vertical-center()
+		margin-right 45px
+		
+	.decor-list
+		margin-bottom 55px
+		
+.decor-list
+	li
+		position relative
+		padding-left 35px
+		line-height 130%
+		margin-bottom 20px
+		font-size 16px
+		&:last-child
+			margin-bottom 0
+		&:before
+			pseudo()
+			position absolute
+			left 0
+			top -1px
+			width 20px
+			height 20px	
+			bg-img('../img/icons/svg/list-arrow.svg', 20px, 20px)
 			
+
+// Benefits
+.sect__benefits
+	&:before
+		background-position center center
+		
+.benefits__col
+	padding 110px 0
+	max-width 560px
+	
+	.img-decor
+		bottom 0
+		right -440px
+		width 572px
+		height 396px
+	
+.benefit
+
+	&__item
+		margin-bottom 60px
+		display flex
+		align-items center
+		justify-content flex-start
+		max-width 450px
+		font 20px $Reg
+		line-height 150%
+		position relative
+		z-index 1
+		&--ic
+			width 50px
+			height 50px
+			display block
+			flex none
+			margin-right 40px
+			background-position 50% 50%
+			background-repeat no-repeat
+			background-size 50px 50px
+		&:last-child
+			margin-bottom 0
+
+// Estimate
+.sect__estimate
+	padding 175px 0 130px
+	overflow hidden
+	
+.estimate
+	position relative
+	
+	&__content
+		position relative
+		z-index 1
+		max-width 450px
+		p
+			margin-bottom 25px
+	&__img
+		position absolute
+		right -100px
+		top -140px
+		width 940px
+		height 983px
+
+
+// Sect advantages
+.sect__advantages
+	position relative
+	padding 80px 0
+	overflow hidden
+	&:before
+		pseudo()
+		width 50%
+		height 100%
+		background #222 url('../img/backgrounds/pattern-bg.png') 50% 50% no-repeat / cover
+		position absolute
+		left 0
+		top 0
+		
+	.container
+		position relative
+		z-index 1
+		
+.advantages
+	&__content
+		width 50%
+		padding-right 180px
+		
+
+	&__information
+		width 50%
+		padding-left 180px
+		display flex
+		flex-direction column
+		align-items flex-start
+		justify-content center
+		&--item
+			margin-bottom 50px
+			max-width 280px
+			position relative
+			z-index 1
+			&-value
+				display inline-block
+				color $accent-color
+				font 65px $Light
+				margin-bottom 15px
+				line-height 1
+			&:last-child
+				margin-bottom 0
+				
+		.img-decor
+			left -195px
+			top -80px
+			width 349px
+			height 334px
+			
+// Protfilio
+.sect__portfolio
+	background $alternate-color-bg url('../img/backgrounds/pattern-full-bg.png') 50% 50% no-repeat / cover
+	
+
+.project__card
+	position relative
+	display flex
+	align-items flex-end
+	overflow hidden
+	padding 45px 35px
+	color $white-color
+	backface-visibility hidden
+	&:before
+		pseudo()
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background-color rgba(30, 30, 30, .45)
+		z-index 1
+	&--content
+		display block
+		position relative
+		z-index 2
+	&--title
+		font 24px $Light
+		line-height 125%
+		margin-bottom 15px
+		display block
+		
+	&--link
+		font 24px $Reg
+		line-height 1
+		text-decoration underline
+		&:hover
+			text-decoration none
+	&--thumbnail
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		will-change transform
+		transition transform .17s ease-in-out
+		z-index -1
+		
+	&:hover
+		.project__card--thumbnail
+			transform scale(1.025, 1.025)
+			
+
+.license
+	text-align center
+	display block
+
+
+// Clients
+.clients
+	margin-top 70px
+	&__title--col
+		width 330px
+		flex none
+		
+	&__logos
+		flex 1
+		flex-wrap wrap
+		display flex
+		justify-content flex-start
+		align-items center
+		margin-left -5px
+		margin-right -5px
+		
+.client	
+	&__logo
+		flex 1 0 auto
+		padding 5px
+		transition opacity .17s ease-in-out
+		opacity .6
+		&:hover
+			opacity 1
+		img
+			@extends .content-img
+			
+// Feedbacls
+.sect__feedbacks
+	background-color $accent-color 
+	position relative
+	overflow hidden
+	.container
+		position relative
+		z-index 1
+	&:before
+		pseudo()
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background url('../img/backgrounds/pattern-full-bg.png') 50% 50% no-repeat / cover
+		opacity .25
+		
+
+.feedback
+	&__slide
+		display flex
+		align-items center
+		padding 15px 75px 150px 75px
+	&__img
+		flex none
+		width 290px
+		&--thumbnail
+			display block
+			background-color $white-color
+			box-shadow 10px 45px 80px rgba(0, 0, 0, 0.4)
+			img
+				display block
+				width 100%
+				object-fit cover
+				height auto
+				
+	&__content
+		flex 1
+		padding-left 100px
+		color $white-color
+		
+	&__title
+		font-size 24px
+		margin-bottom 30px
+		
+	&__text
+		font 24px $Italic
+		line-height 146%
+		margin-bottom 25px
+		span
+			display none
+			
+	&__link
+		font 24px $Italic
+		text-decoration underline
+		color $white-color
+		position relative
+		&:before
+			content attr(data-default-text)
+		&.is-toggled
+			&:before
+				content attr(data-toggled-text)
+		&:hover
+			text-decoration none
+
+// Sect form
+.sect__form
+	padding 100px 0
+	position relative
+	overflow hidden
+	&:after
+		pseudo()
+		position absolute
+		height 100%
+		right 0
+		top 0
+		width 510px
+		background url('../img/backgrounds/sect-form-bg.jpg') 50% 50% no-repeat / cover
+	
+	.container
+		position relative
+		z-index 1
+	
+.contacts
+	
+	&__block
+		max-width 430px
+		position relative
+		z-index 4
+		
+		.sect__title
+			font-size 30px
+		p
+			margin-bottom 25px
+	&__row
+		margin-bottom 20px
+		&:last-child
+			margin-bottom 0
+			
+	&__link
+		position relative
+		display inline-block
+		padding-left 30px
+		color $text-color
+		margin-right 15px
+		&:last-child
+			margin-right 0
+		&:hover
+			color $accent-color
+		&--ic
+			display block
+			width 18px
+			height 18px
+			position absolute
+			left 0
+			vertical-center()
+			svg
+				display block
+				width 100%
+				height 100%
+				fill $accent-color
+				
+		&--messanger
+			padding-left 40px
+			.contacts__link--ic
+				width 25px
+				height 25px
+				
+
+.form
+	&__wrapper
+		position relative
+		width 460px
+	&__img
+		position absolute
+		vertical-center()
+		left -380px
+		width 616px
+		height 538px
+		img 
+			display block
+			width 100%
+			height auto
+	
+	&__block
+		background-color $white-color
+		position relative
+		z-index 1
+		border-radius 15px
+		box-shadow 0px 25px 55px rgba(0, 0, 0, 0.45)
+		padding 40px 50px 50px 50px
+		
+		&--title
+			font 18px $Bold
+			line-height 144%
+			margin-bottom 13px
+			text-align center
+// Faq
+
+.sect__faq
+	overflow hidden
+	
+	.container
+		position relative
+		z-index 2
+
+.faq
+	margin-top 55px
+	padding-left 100px
+	padding-right 100px
+	
+	.img-decor
+		&-top
+			right -260px
+			top -270px
+			width 325px
+			height 413px
+		&-bottom
+			right 100%
+			width 220px
+			height 220px
+			bottom -125px
+			
+	&__items
+		position relative
+		z-index 1
+	&__item
+		margin-bottom 15px
+		background-color $white-color
+		border-radius 9px
+		box-shadow 0px 12px 30px rgba(0, 0, 0, 0.15)
+		&:last-child
+			margin-bottom 0
+			
+		&--title
+			margin-right 25px
+			transition color .17s ease-in-out
+			
+		&--header
+			padding 30px 50px 30px 70px
+			
+		&--body
+			padding 0 70px 85px 70px
+			display none
+			p
+				margin-bottom 10px
+				&:last-child
+					margin-bottom 0
+					
+		&.is-toggled
+			.faq
+				&__item--header
+					color $lighter-text-color
+				&__btn
+					&:after
+						opacity 0
+					&:before
+						background-color $lighter-text-color
+					
+	&__btn
+		width 26px
+		height 26px
+		display inline-block
+		position relative
+		flex none
+		&:before,
+		&:after
+			pseudo()
+			position absolute
+			background-color $accent-color
+			transition all .17s ease-in-out
+			
+		&:before
+			width 100%
+			height 4.88px
+			left 0
+			vertical-center()
+			
+			
+		&:after
+			height 100%
+			width 4.88px
+			top 0
+			horisontal-center()
+			
+		&:hover
+			&:before,
+			&:after
+				background-color $lighter-text-color
+				
+	
+		
