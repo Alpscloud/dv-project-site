@@ -60,9 +60,9 @@
 			
 
 	// Estimate
-	.estimate__img
-		width 770px
-		height 805px
+	// .estimate__img
+	// 	width 770px
+	// 	height 805px
 		
 	// ADvatages
 	.advantages
@@ -436,8 +436,9 @@
 		&__img
 			right auto
 			horisontal-center()
-			top auto
-			bottom -850px
+			// top auto
+			// bottom -850px
+			top 100%
 			
 
 
@@ -554,6 +555,21 @@
 	.client__logo
 		flex 1 0 125px
 		max-width 125px
+		
+
+	// Popup
+	
+	// .popup
+	// 	.btn__close
+	.popup__overflow
+		padding 60px 10px		
+	.btn__close
+		width 35px
+		height 35px
+		svg
+			width 20px
+			height 20px
+			
 		
 +max-screen(620px)
 	body
@@ -732,12 +748,13 @@
 		&__content
 			max-width 100%
 		&__img
-			width 500px
+			// width 500px
+			width 400px
 			height auto
-			bottom -545px
-			transform none
-			left auto
-			right 0
+			// bottom -545px
+			// transform none
+			// left auto
+			// right 0
 	
 	// Advantages
 	.sect__advantages
@@ -825,10 +842,23 @@
 				
 
 	// Form
+	.sect__title--mobile
+		display block
 	.sect__form
 		padding 35px 0
+		
+		.form__wrapper
+			margin-bottom 35px
+			
 		.contacts__block
-			margin-bottom 30px
+			margin-bottom 0
+			
+	.input
+		padding-top 12px
+		padding-bottom 12px
+		&__file--label
+			padding-top 12px
+			padding-bottom 12px
 			
 	.contacts
 		&__block
@@ -843,12 +873,18 @@
 			margin-bottom 15px
 			&:last-child
 				margin-bottom 0
-		
+	
+	.contacts__block
+		width 100%
+		order 2
+		.sect__title
+			display none	
 
 
 	.form
 		&__wrapper
 			width 100%
+			order 1
 		&__block
 			border-radius 0
 			box-shadow none
@@ -863,6 +899,40 @@
 
 	.btn-lg
 		font-size 14px
+		
+
+	.popup
+		&__overflow
+			padding-top 20px !important
+			padding-bottom 20px !important
+		.form__block
+			border-radius 15px
+			padding 20px
+			
+			&--title
+				font-size 14px
+				padding-right 25px
+				text-align left
+				
+		
+		.btn__close
+			bottom auto
+			margin-bottom 0 !important
+			z-index 3
+			top 10px
+			border-color $accent-color
+			right 10px
+			width 25px
+			height 25px
+			svg
+				fill $accent-color
+				fill-opacity 1
+				width 15px
+				height 15px
+				
+		.input
+			padding-top 11px
+			padding-bottom 11px
 		
 
 	// Contacts
@@ -942,5 +1012,23 @@
 		flex auto
 		max-width none
 		width 33.3333%
+		
+
++max-screen-height(800px)
+	.popup
+		&__overflow
+			padding 60px 10px
+		&__title
+			display none
+		
+		.btn__close
+			margin-bottom 15px
+			
+	.btn__close
+		width 35px
+		height 35px
+		svg
+			width 20px
+			height 20px
 		
 			

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Project name</title>
+	<title>DV Project</title>
 
 	<!-- Meta tags -->
 	<meta charset="UTF-8">
@@ -40,6 +40,66 @@
 	<!-- CONTENT WRAPPER -->
 	<div class="content__wrapper">
 
+		<!-- Popup -->
+<div class="popup js-popup">
+	<div class="popup__overflow">
+
+		<div class="popup__body text-center">
+			<button class="btn__close js-close-popup-btn" type="button">
+				<svg  viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+					<g>
+						<path d="M16.6571 15.0008L29.6565 2.00133C30.1142 1.54365 30.1142 0.80162 29.6565 0.344004C29.1989 -0.113612 28.4568 -0.113671 27.9992 0.344004L14.9997 13.3435L2.00033 0.344004C1.54266 -0.113671 0.800628 -0.113671 0.343012 0.344004C-0.114604 0.801679 -0.114663 1.54371 0.343012 2.00133L13.3424 15.0007L0.343012 28.0002C-0.114663 28.4579 -0.114663 29.1999 0.343012 29.6575C0.57182 29.8863 0.871761 30.0007 1.1717 30.0007C1.47164 30.0007 1.77153 29.8863 2.00039 29.6575L14.9997 16.6581L27.9991 29.6575C28.228 29.8863 28.5279 30.0007 28.8278 30.0007C29.1278 30.0007 29.4277 29.8863 29.6565 29.6575C30.1142 29.1999 30.1142 28.4578 29.6565 28.0002L16.6571 15.0008Z"/>
+					</g>
+				</svg>
+			</button>
+
+			<h3 class="popup__title white-color sect__title">Подбор системы пожарной<br>безопасности</h3>
+
+			<!-- Popup content-->
+			<div class="popup__content">
+				<div class="form__block">
+					<h4 class="form__block--title">Заполните форму и мы поможем вам подобрать систему для обеспечения пожарной безопасности</h4>
+
+					<form class="js-form">
+						<div class="input__wrapper">
+							<label class="input__label text-left">
+								<span>Ваше Имя</span>
+								<input type="text" class="input js-input" placeholder="Иван Иванов" name="name">
+							</label>
+						</div>
+
+						<div class="input__wrapper">
+							<label class="input__label text-left">
+								<span>Ваш телефон</span>
+								<input type="tel" class="input js-input js-input-phone" placeholder="+7 (495) 000-00-00" name="phone">
+							</label>
+						</div>
+
+						<div class="input__wrapper">
+							<label class="input__label text-left">
+								<span>Ваше Email</span>
+								<input type="email" class="input js-input" placeholder="mail@mail" name="email">
+							</label>
+						</div>
+
+						<div class="input__wrapper">
+							<input type="file" id="files1" name="fileFF[]" multiple class="input__file" data-multiple-caption="Выбрано: {count} файла(ов)">
+							<label for="files1" class="input__file--label">
+								<span>Прикрепить файл</span>
+							</label>
+							<span class="input__file--name is-active"></span>
+						</div>
+
+
+						<button class="btn btn-wide btn-lg" type="submit">Получить коммерческое предложение</button>
+					</form>
+				</div>
+			</div>
+			<!-- //Popup content-->
+		</div>
+	</div>
+</div>
+<!-- //Popup -->
 		<!-- Header -->
 		<header class="header">
 	<div class="header__top dark-bg">
@@ -135,12 +195,12 @@
 
 							<div class="promo__content">
 								<h1 class="title">Монтаж и обслуживание систем пожарной безопасности</h1>
-								<p class="subtitle">Монтаж пожарной сигнализации и систем пожаротушения с гарантией прохождения проверки МЧС</p>
+								<p class="subtitle">Монтаж пожарной сигнализации и систем пожаротушения<br>с гарантией прохождения проверки МЧС</p>
 
 								<div class="commercial-proposal">
-									<p class="commercial-proposal__text lighter-text-color">Получите коммерческое предложение на монтаж систем пожарной безопасности</p>
+									<p class="commercial-proposal__text lighter-text-color">Получите коммерческое предложение на монтаж систем<br>пожарной безопасности</p>
 
-									<a href="#" class="btn btn-sm btn-with-img">
+									<a href="#sectForm" class="btn btn-sm btn-with-img js-smooth-scroll-link">
 										<span class="btn__content">
 											<img src="img/button-img.png" alt="Получить коммерческое предложение" class="btn__img">
 											<span class="btn__text">Получить коммерческое<br>предложение</span>
@@ -298,7 +358,7 @@
 
 							<div class="row align-vertical-center align-horisontal-start help__contacts--row">
 
-								<a href="#" class="btn btn__search">
+								<a href="#" class="btn btn__search js-open-popup-btn">
 									<i class="btn__search--ic"></i>
 									<span>Подобрать Сигнализацию</span>
 								</a>
@@ -335,7 +395,7 @@
 						<div class="guarantee__content">
 							<img src="img/russia.png" alt="">
 							<h3 class="sect__title sect__title--gutter">Гарантируем <span>прохождение</span> проверки МЧС</h3>
-							<p class="light-text-color">Гарантируем в договоре, что выполненная нами работа будет соответствовать требованиям и пройдет проверку МЧС </p>
+							<p class="light-text-color">Поможем подобрать сигнализацию для вашего объекта и ответим на ваши вопросы</p>
 						</div>
 
 						<div class="guarantee__information bg" style="background-image: url('img/backgrounds/emergency-bg.jpg');">
@@ -412,7 +472,7 @@
 									</ul>
 								</div>
 
-								<a href="#" class="btn btn-with-img">
+								<a href="#sectForm" class="btn btn-sm btn-with-img js-smooth-scroll-link">
 									<span class="btn__content">
 										<img src="img/button-img.png" alt="Получить коммерческое предложение" class="btn__img">
 										<span class="btn__text">Получить коммерческое<br>предложение</span>
@@ -488,8 +548,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- //container -->
+				
+				<!-- //container -->
+			</section>
 
 			<!-- Sect  estimate -->
 			<section class="sect__estimate alternate-color-bg">
@@ -502,7 +563,7 @@
 							<h3 class="sect__title sect__title--gutter">Получить <span>смету</span> и <span>комерческое предложение</span></h3>
 							<p class="light-text-color">На проектирование и монтаж пожарной сигнализации с гарантией прохождения проверки МЧС</p>
 
-							<a href="#" class="btn btn-with-img">
+							<a href="#sectForm" class="btn btn-with-img js-smooth-scroll-link">
 								<span class="btn__content">
 									<img src="img/button-img.png" alt="Получить коммерческое предложение" class="btn__img">
 									<span class="btn__text">Получить коммерческое предложение</span>
@@ -764,7 +825,7 @@
 					<!-- Navigation -->
 					<div class="text-center portfolio__slider--mobile-navigation">
 						<button class="slider__btn--arrow js-portfolio-mobile-slider-btn-prev" type="button">
-							<svg viewBox="0 0 25 18"xmlns="http://www.w3.org/2000/svg">
+							<svg viewBox="0 0 25 18" xmlns="http://www.w3.org/2000/svg">
 								<path d="M0.340518 9.47406L7.78011 16.9532C8.23401 17.4095 8.97016 17.4095 9.42407 16.9532C9.87807 16.4968 9.87807 15.7569 9.42407 15.3005L3.9689 9.81633L23.8376 9.81633C24.4796 9.81633 25.0001 9.29307 25.0001 8.64772C25.0001 8.00246 24.4796 7.47911 23.8376 7.47911L3.9689 7.47911L9.42389 1.99496C9.87789 1.53855 9.87789 0.798674 9.42389 0.342263C9.19698 0.114243 8.89939 4.99784e-07 8.6019 4.73776e-07C8.30441 4.47769e-07 8.00692 0.114243 7.77992 0.342263L0.340518 7.82137C-0.113483 8.27778 -0.113483 9.01765 0.340518 9.47406Z" />
 							</svg>
 
@@ -775,7 +836,7 @@
 							</svg>
 
 						</button>
-						
+
 					</div>
 					<!-- //Navigation -->
 
@@ -831,7 +892,7 @@
 						<!-- Navigation -->
 						<div class="text-center licenses__slider--navigation">
 							<button class="slider__btn--arrow js-licenses-slider-btn-prev" type="button">
-								<svg viewBox="0 0 25 18"xmlns="http://www.w3.org/2000/svg">
+								<svg viewBox="0 0 25 18" xmlns="http://www.w3.org/2000/svg">
 									<path d="M0.340518 9.47406L7.78011 16.9532C8.23401 17.4095 8.97016 17.4095 9.42407 16.9532C9.87807 16.4968 9.87807 15.7569 9.42407 15.3005L3.9689 9.81633L23.8376 9.81633C24.4796 9.81633 25.0001 9.29307 25.0001 8.64772C25.0001 8.00246 24.4796 7.47911 23.8376 7.47911L3.9689 7.47911L9.42389 1.99496C9.87789 1.53855 9.87789 0.798674 9.42389 0.342263C9.19698 0.114243 8.89939 4.99784e-07 8.6019 4.73776e-07C8.30441 4.47769e-07 8.00692 0.114243 7.77992 0.342263L0.340518 7.82137C-0.113483 8.27778 -0.113483 9.01765 0.340518 9.47406Z" />
 								</svg>
 
@@ -996,8 +1057,8 @@
 
 
 			<!-- Section form -->
-			<section class="sect__form">
-				<h2 class="w3c">&nbsp;</h2>
+			<section class="sect__form" id="sectForm">
+				<h3 class="sect__title sect__title--sm sect__title--gutter sect__title--mobile container text-center">Получите <span>коммерческое предложение</span> и <span>смету</span> на монтаж пожарной сигнализаци</h3>
 
 				<div class="container">
 
@@ -1037,7 +1098,7 @@
 								</div>
 
 								<div class="contacts__row row align-horisontal-flex-start">
-									
+
 									<a href="https://wa.me/79101510855" class="contacts__link contacts__link--messanger">
 										<i class="contacts__link--ic">
 											<svg  viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
@@ -1067,7 +1128,7 @@
 						</div>
 
 						<div class="form__wrapper">
-							
+
 							<div class="form__img">
 								<img src="img/mockup-sm.png" alt="">
 							</div>
@@ -1135,7 +1196,7 @@
 						</div>
 
 						<div class="faq__items">
-							
+
 							<!-- Faq item -->
 							<div class="faq__item">
 								<div class="faq__item--header js-toggle-faq">
@@ -1285,7 +1346,7 @@
 								<!-- Tg -->
 								<li class="socials__item">
 									<a href="#" target="_blank" class="socials__link">
-										<svg viewBox="0 0 30 30"xmlns="http://www.w3.org/2000/svg">
+										<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 											<path  d="M0 0V30H30V0H0ZM25.3724 6.63824L21.8476 23.5923C21.7646 23.9926 21.2953 24.1739 20.9641 23.9333L16.1525 20.44C15.8604 20.2279 15.4621 20.2392 15.1825 20.4672L12.5148 22.6418C12.2053 22.8949 11.7387 22.7538 11.6202 22.3725L9.7678 16.4153L4.98211 14.6293C4.49598 14.4471 4.49182 13.7608 4.97657 13.5741L24.6171 5.9973C25.0335 5.83629 25.4631 6.20103 25.3724 6.63824Z" />
 											<path d="M20.6747 9.70382L11.3217 15.4643C10.9632 15.6855 10.7945 16.1184 10.9101 16.5237L11.9214 20.077C11.9933 20.3287 12.3586 20.303 12.3936 20.0429L12.6564 18.0943C12.706 17.7275 12.881 17.3893 13.1524 17.1368L20.8712 9.96175C21.0157 9.82791 20.8427 9.60063 20.6747 9.70382Z"/>
 										</svg>
@@ -1296,7 +1357,7 @@
 								<!-- Vk -->
 								<li class="socials__item">
 									<a href="#" target="_blank" class="socials__link">
-										<svg viewBox="0 0 30 30"xmlns="http://www.w3.org/2000/svg">
+										<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
 											<path d="M0 0V30H30V0H0ZM22.49 16.5974C23.1787 17.2693 23.9069 17.9018 24.525 18.6446C24.7981 18.9728 25.0565 19.3114 25.2533 19.6917C25.5328 20.2366 25.2795 20.8335 24.7928 20.8664L21.7681 20.8651C20.9873 20.9293 20.3652 20.6145 19.8405 20.0804C19.4233 19.6551 19.0333 19.1999 18.6305 18.7602C18.4666 18.5791 18.2932 18.4098 18.0872 18.2747C17.674 18.007 17.3156 18.0883 17.0794 18.5186C16.8392 18.957 16.7828 19.4438 16.7606 19.9319C16.7277 20.6445 16.5127 20.8309 15.7975 20.8652C14.2673 20.936 12.8161 20.7036 11.4684 19.9333C10.2781 19.2537 9.35703 18.2929 8.55514 17.2065C6.99237 15.0884 5.79547 12.7631 4.72081 10.3709C4.47791 9.83176 4.65534 9.54284 5.24822 9.53242C6.23657 9.5129 7.22453 9.51528 8.2115 9.5311C8.61297 9.53782 8.87934 9.76728 9.0329 10.1465C9.56703 11.459 10.2204 12.7081 11.0405 13.867C11.2598 14.1754 11.4829 14.4824 11.799 14.7001C12.1493 14.9416 12.4171 14.8627 12.5823 14.4704C12.6875 14.2211 12.7335 13.9561 12.7557 13.6896C12.8343 12.7776 12.8437 11.8645 12.7083 10.9551C12.6243 10.3867 12.3029 10.0192 11.7361 9.91174C11.4472 9.85662 11.4905 9.75046 11.6296 9.58484C11.8739 9.30033 12.1036 9.1229 12.5589 9.1229H15.9773C16.5165 9.22807 16.6374 9.4709 16.7107 10.0128L16.7134 13.8119C16.707 14.0218 16.8185 14.6436 17.1951 14.7814C17.4967 14.8811 17.6976 14.6382 17.8787 14.4467C18.6974 13.578 19.2816 12.5507 19.8036 11.4878C20.0347 11.0205 20.2342 10.5351 20.4284 10.0493C20.5715 9.68987 20.7945 9.51284 21.2 9.51923L24.4912 9.52325C24.5883 9.52325 24.6881 9.52325 24.7838 9.53901C25.3374 9.63475 25.4897 9.87363 25.3176 10.4155C25.0489 11.2644 24.5225 11.9732 24.0095 12.683C23.4595 13.4429 22.8744 14.1762 22.3285 14.9401C21.8299 15.6396 21.8692 15.9913 22.49 16.5974Z"/>
 										</svg>
 
@@ -1339,14 +1400,13 @@
 				<!-- //Map -->
 			</section>
 			<!-- //Section contacts -->
-		</section>
-		<!-- //Section benefits -->
 
-	</main>
-	<!-- //Main -->
 
-	<!-- Footer -->
-	<footer class="footer">
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		<footer class="footer">
 	<div class="footer__top">
 		<div class="container">
 			<div class="row align-horisontal-between footer__top--row">
@@ -1412,12 +1472,12 @@
 		</div>
 	</div>
 </footer>
-	<!-- //Footer -->
+		<!-- //Footer -->
 
-</div>
-<!-- //CONTENT WRAPPER -->
+	</div>
+	<!-- //CONTENT WRAPPER -->
 
-<!-- jQuery IF NEEDED-->
+	<!-- jQuery IF NEEDED-->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <!-- Google map -->
 <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR5vIGzW3iFwxgUDP3TEFZR66J5LzJdhY"></script> -->

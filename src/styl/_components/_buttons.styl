@@ -37,12 +37,29 @@
 	
 	&:hover
 		background-color darken($accent-color, 10%)
+		
 	&__close
 		display inline-block
-		width 20px
-		height 20px
-		background url('../img/icons/svg/close-ic.svg') center center no-repeat
-		background-size 20px 20px
+		width 65px
+		height 65px
+		border-radius 50%
+		border 2px solid rgba($white-color, .3)
+		position absolute
+		
+		svg
+			display block
+			width 30px
+			height 30px
+			fill $white-color
+			fill-opacity .3
+			position absolute
+			position-center()
+			transition fill-opacity .17s ease-in-out
+			
+		&:hover
+			border-color $white-color
+			svg
+				fill-opacity 1
 		
 	&__search
 		padding 20px 30px
