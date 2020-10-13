@@ -1,0 +1,72 @@
+.project
+	background-color $white-color
+	padding 75px 65px
+	margin-left -65px
+	margin-right -65px
+	&__title
+		font 30px $Light
+		line-height 45px
+		margin-bottom 30px
+		
+	&-slider
+		&__col
+			flex 1
+			margin-right 65px
+			width 100%
+			max-width 505px
+		
+	&__content
+		flex 1
+		&--description
+			margin-bottom 30px
+			font-size 14px
+			line-height 30px
+			&:last-child
+				margin-bottom 0
+			&-title
+				font 20px $Med
+				line-height 30px
+				margin-bottom 15px
+				position relative
+				padding-left 41px
+				&:before
+					pseudo()
+					position absolute
+					vertical-center()
+					left 0
+					width 30px
+					height 30px
+					background-position 50% 50%
+					background-repeat no-repeat
+					background-size contain
+				&_worktime
+					&:before
+						background-image url('../img/icons/svg/p-worktime.svg')
+				&_location
+					&:before
+						background-image url('../img/icons/svg/p-location.svg')
+				&_work
+					&:before
+						background-image url('../img/icons/svg/p-work.svg')
+				&_info
+					&:before
+						background-image url('../img/icons/svg/p-info.svg')
+						
+.project-slider
+	&__thumbnails
+		margin-top 10px
+	&__main
+		position relative
+						
+.thumbnail
+	position relative
+	overflow hidden
+	width 100%
+	padding-top 87.5%
+	img
+		display block
+		position absolute
+		position-center()
+		width 100%
+		height 100%
+		object-fit cover

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 	Array.prototype.forEach.call( fileInputs, function( input ) {
-		var label    = input.nextElementSibling,
+		var label    = input.parentNode,
 		labelVal = label.innerHTML;
 
 		input.addEventListener('change', function(e) {
@@ -34,6 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
 	});
 
+
+
+
+	
+
 });
 
 
@@ -43,6 +48,10 @@ $(document).ready(function() {
 			html = body.width(),
 			timer; // for disable scroll
 	// ========= =========== =========== ===========
+
+	
+
+
 
 	// ========= Smooth scrolling to the acnhors ===========
 	$('.js-smooth-scroll-link').on('click', function (e) {
@@ -107,7 +116,6 @@ $(document).ready(function() {
 		speed: 500,
     spaceBetween: 0,
     slidesPerView: 1,
-    loop: true,
 		pagination: {
 			el: '.js-portfolio-desktop-slider-pagination',
 			clickable: true
@@ -125,10 +133,7 @@ $(document).ready(function() {
 	var portfolioMobileSlider = new Swiper('.js-portfolio-mobile-slider', {
 		slidesPerView: 'auto',
 		speed: 500,
-		autoplay: {
-			delay: 4000,
-			disableOnInteraction: false
-		},
+		
 		spaceBetween: 0,
 		navigation: {
 			nextEl: '.js-portfolio-mobile-slider-btn-next',
@@ -183,6 +188,37 @@ $(document).ready(function() {
 		
 	});
 
+	var projectSliderInit = $('.js-project-slider-main');
+
+	if(projectSliderInit.length > 0) {
+		var projectSliderThumbs = new Swiper('.js-project-slider-thumbnails', {
+			spaceBetween: 10,
+			slidesPerView: 3,
+			loop: true,
+			freeMode: false,
+			loopedSlides: 1, //looped slides should be the same
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+			touchRatio: 0
+		});
+
+		var galleryTop = new Swiper('.js-project-slider-main', {
+			spaceBetween: 0,
+			loop: true,
+			loopedSlides: 1, //looped slides should be the same
+			navigation: {
+				nextEl: '.js-project-slider-main-btn-next',
+				prevEl: '.js-project-slider-main-btn-prev',
+			},
+
+			thumbs: {
+				swiper: projectSliderThumbs,
+			},
+		});
+	}
+
+	
+
 	// Fancy
 	$('[data-fancybox]').fancybox({
 		toolbar  : false,
@@ -205,6 +241,49 @@ $(document).ready(function() {
 
 		$(this).parents('.faq__item').find('.faq__item--body').stop().slideToggle(170);
 	});
+
+	// ========= Ajax form ===========
+	$('.js-input').on('focus',function() {
+		if($(this).hasClass('is-error')) {
+			$(this).removeClass('is-error');
+		}
+	});
+
+
+ $('.js-form').on('submit', function(e) {
+		e.preventDefault();
+
+		var self = $(this);
+
+		var inputs = self.find('.js-input'),
+		flag = true;
+
+		var formData = new FormData(self.get(0));
+
+		// Validate
+		$(inputs).each(function() {
+			if(!$(this).val() || $(this).val() == "") {
+				$(this).addClass('is-error');
+				flag = false;
+			}
+		});
+
+		if(!flag) {return false;}
+
+		$.ajax({
+			contentType: false, 
+      processData: false, 
+      type: "POST",
+			url: "/wp-content/themes/dv-project-theme/contacts.php", //Change
+			data: formData
+		}).done(function() {
+			self.trigger("reset");
+			self.find(".input__file--name").removeClass('is-active');
+			alert('Спасибо! Ваша заявка отправлена!');
+		});
+
+	});
+	// ========= =========== =========== ===========
 
 
 	$('.js-input-phone').mask("+7(999)-999-99-99",{placeholder:" "});

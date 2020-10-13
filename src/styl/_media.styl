@@ -17,7 +17,7 @@
 	
 	// Help
 	.help__img
-		margin-left 100px
+		margin-left -100px
 	
 
 	// Faq
@@ -50,6 +50,7 @@
 		&__content
 			padding-right 15px
 			padding-left 15px
+			padding-top 40px
 		&__information
 			position relative
 			left auto
@@ -59,6 +60,10 @@
 			margin-top 40px
 			
 
+	.need-project
+		&__content
+			img
+				margin-right -100px
 	// Estimate
 	// .estimate__img
 	// 	width 770px
@@ -142,6 +147,14 @@
 	.promo__content
 		padding-right 60px
 		
+	.promo-offer
+		&__content
+			.sect__title
+				font-size 38px
+				
+			img
+				max-width 500px
+		
 	// Services
 	.sect__services
 		&:before,
@@ -160,7 +173,11 @@
 				
 	// Help
 	.sect__help
-		padding 80px 0 110px
+		padding-top 80px
+		
+	// Help
+	.help__img
+		margin-left -150px
 		
 	// Portfolio
 	.sect__portfolio
@@ -215,7 +232,25 @@
 		max-width 100%
 		margin-top 15px
 		
+	.problems__block
+		img
+			margin-left -150px
+		
+	// projects
+	.project__card--wrapper
+		padding 5px
+	
+	.projects__row
+		margin-left -5px
+		margin-right -5px
+		
 
+	.project
+		padding 55px 15px
+		margin-left -15px
+		margin-right -15px
+		&-slider__col
+			margin-right 35px
 				
 +max-screen(1000px)
 	// Header
@@ -325,6 +360,17 @@
 	.btn__hamburger
 		display inline-block
 		
+	.need-project
+		&__content
+			max-width 100%
+			padding 60px 0
+			&--text
+				&_lg
+					font-size 24px
+					line-height 28px
+			img
+				display none
+		
 	// Services
 	.sect__services
 		padding 80px 0 55px
@@ -379,13 +425,16 @@
 	.help
 		&__block
 			max-width 100%
+			padding-bottom 0
 			&--content
-				max-width 540px
+				max-width 100%
+				
 		&__img
+			position relative
+			margin-left 0
 			left auto
-			right 0
-			width 370px
-			height 250px
+			right auto
+			width 100%
 			
 
 	// Documents
@@ -506,6 +555,15 @@
 		width 100%
 		margin-bottom 80px
 		
+	.project
+		padding 55px 35px
+		&__row
+			flex-wrap wrap
+		&-slider__col
+			max-width 100%
+			margin-right 0
+			margin-bottom 40px
+		
 +max-screen(900px)
 	// Promo
 		
@@ -543,6 +601,34 @@
 				top auto
 				bottom 0
 				right 0
+				
+
+	.promo-offer
+		&__content
+	
+				
+			img
+				max-width 440px
+				
+	.our-experience
+		&__col
+			width 50%
+			
+	.problems__block
+		max-width 100%
+		padding-top 35px
+		padding-bottom 0
+		img
+			margin-left 0
+			width 100%
+			position relative
+			left auto
+			bottom -50px
+	
+	.project__card--wrapper
+		width 50%
+		&:nth-child(9n+1)
+			width 100%
 			
 +max-screen(767px)
 	// Portfolio
@@ -569,7 +655,26 @@
 		svg
 			width 20px
 			height 20px
+	
+
+	.promo-offer
+		&__content
+			padding-bottom 0
 			
+			.sect__title
+				font-size 24px
+				line-height 125%
+				span
+					font-size 16px
+		
+				
+			img
+				position relative
+				right auto
+				bottom auto
+				transform translateY(2px)
+				width 100%
+				max-width 100%
 		
 +max-screen(620px)
 	body
@@ -602,6 +707,9 @@
 		&__text
 			margin-bottom 30px
 			
+	.sect__our-experience
+		padding 60px 0 0
+			
 	.promo
 		&__content
 			margin-bottom 25px
@@ -615,7 +723,15 @@
 				text-align left
 				&:before
 					vertical-center()
-					
+	
+
+	.sect__seo
+		padding 60px 0
+		.content
+			h2,h3
+				font-size 24px
+				line-height 125%
+				margin-bottom 30px			
 
 	// Services
 	.sect__services
@@ -661,17 +777,19 @@
 	// Help
 	
 	.sect__help
-		padding 35px 0
+		padding-top 35px
 		
 	.help
 		&__block
 			&--content
-				text-align center
-				max-width 100%
 				p
 					font-size 14px
 					line-height 129%
 					margin-bottom 25px
+				&_text
+					p
+						font-size 16px
+						margin-bottom 5px
 		&__contacts
 			margin-left 0
 			margin-top 15px
@@ -680,14 +798,11 @@
 			&--row
 				flex-direction column
 				align-items center
+				
+				.btn
+					text-align center
 		
-		&__img
-			width 220px
-			height 150px
-			top auto
-			transform none
-			bottom -10px
-			right -50px
+
 			
 	.sect__title--gutter
 		margin-bottom 15px
@@ -979,19 +1094,56 @@
 			&:last-child
 				margin-bottom 0
 		
+	
+	.page-content
+		padding-bottom 80px
 		
+	.load-more
+		margin-top 60px	
 		
-
+	.project__card--wrapper
+		width 100%
+		&:nth-child(9n+1)
+			width 100%
+			.project__card
+				&--title
+					font-size 24px
+					line-height 125%
+					margin-bottom 10px
+					
+		.project__card
+			padding 140px 20px 30px 20px
+			&--title
+				margin-bottom 10px 
+			&--link
+				font-size 14px
+				
+	.project
+		padding 40px 15px
+		margin-left 0
+		margin-right 0
+		&__title
+			font-size 26px
+			line-height 32px
+			margin-bottom 40px
+		
+	.page-single-project
+		.container
+			padding-left 0
+			padding-right 0
 			
 +max-screen(440px)
 	.btn
 		width 100%
 		font-size 14px
-		padding-top 10px
-		padding-bottom 10px
+		text-align center
 		&__search
 			padding-top 11px
 			padding-bottom 11px
+			
+	.subtitle
+		font-size 16px
+		line-height 22px
 		
 	// Promo
 	.sect__promo
@@ -1012,6 +1164,10 @@
 		flex auto
 		max-width none
 		width 33.3333%
+		
+	.gift
+		padding 160px 20px 30px 20px
+		background-position top -15px left
 		
 
 +max-screen-height(800px)

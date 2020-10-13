@@ -1,0 +1,50 @@
+.main-page-inside
+	padding-top 25px
+	background-color #FAFAFA
+	
+.project__card--wrapper
+	padding 15px
+	width 33.3333%
+	&:nth-child(9n+1)
+		width calc(100% - 33.3333%)
+		.project__card
+			&--title
+				font-size 36px
+				line-height 45px
+				margin-bottom 1px
+		
+	
+	.project__card
+		height 100%
+		padding-top 220px
+			
+		&--content
+			max-width 465px
+			
+.page-title
+	margin-bottom 35px
+	
+.load-more
+	margin-top 42px
+	&__btn
+		display inline-block
+		padding-left 50px
+		color $accent-color
+		font 16px $Reg
+		position relative
+		&:before
+			pseudo()
+			position absolute
+			left 0
+			top 50%
+			transform translateY(-50%)
+			width 35px
+			height 35px
+			background url('../img/icons/svg/circle-arrow.svg') 50% 50% no-repeat / contain
+			will-change transform 
+			transition transform .17s ease-in-out
+		&:hover
+			&:before
+				transform translateY(-50%) rotate(-90deg)
+
+

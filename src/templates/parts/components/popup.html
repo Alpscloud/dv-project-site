@@ -19,6 +19,11 @@
 					<h4 class="form__block--title">Заполните форму и мы поможем вам подобрать систему для обеспечения пожарной безопасности</h4>
 
 					<form class="js-form">
+						<!-- Hidden inputs -->
+						<input type="hidden" name="project_name" value="DV Pproject">
+						<input type="hidden" name="admin_email" value="winde100kg@gmail.com">
+						<input type="hidden" name="form_subject" value="Попап форма">
+						<!-- // Hidden inputs -->
 						<div class="input__wrapper">
 							<label class="input__label text-left">
 								<span>Ваше Имя</span>
@@ -41,8 +46,9 @@
 						</div>
 
 						<div class="input__wrapper">
-							<input type="file" id="files1" name="fileFF[]" multiple class="input__file" data-multiple-caption="Выбрано: {count} файла(ов)">
-							<label for="files1" class="input__file--label">
+							
+							<label  class="input__file--label">
+								<input type="file" name="fileFF[]" multiple class="input__file" data-multiple-caption="Выбрано: {count} файла(ов)">
 								<span>Прикрепить файл</span>
 							</label>
 							<span class="input__file--name is-active"></span>
