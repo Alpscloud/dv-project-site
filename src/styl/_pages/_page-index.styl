@@ -544,11 +544,11 @@
 		width 100%
 		height 100%
 		background-color rgba(30, 30, 30, .45)
-		z-index 1
+		transition background-color .17s ease-in-out
 	&--content
 		display block
 		position relative
-		z-index 2
+		z-index 1
 	&--title
 		font 24px $Light
 		line-height 125%
@@ -562,6 +562,7 @@
 		&:hover
 			text-decoration none
 	&--thumbnail
+		display block
 		position absolute
 		top 0
 		left 0
@@ -569,15 +570,16 @@
 		height 100%
 		will-change transform
 		transition transform .17s ease-in-out
-		z-index -1
+		z-index 1
+		
 	&--preview
 		display block
 		margin-bottom 15px
 	
 		
 	&:hover
-		.project__card--thumbnail
-			transform scale(1.025, 1.025)
+		&:before
+			background-color rgba(30, 30, 30, .65)
 			
 
 .license
@@ -708,7 +710,7 @@
 		margin-bottom 30px
 		
 	&__text
-		font 24px $Italic
+		font 16px $Italic
 		line-height 146%
 		margin-bottom 25px
 		span
@@ -803,6 +805,18 @@
 			&:hover
 				opacity .7
 				
+			&.roistat-phone
+				&:before
+					background-image url('../img/icons/svg/phone-light.svg')
+				
+.contacts
+	.roistat-phone
+		margin-bottom 0
+		position relative
+		display flex
+		align-items center
+	
+				
 
 .form
 	&__wrapper
@@ -832,6 +846,8 @@
 			line-height 144%
 			margin-bottom 13px
 			text-align center
+			span
+				font-size 16px
 // Faq
 
 .sect__faq
@@ -930,6 +946,7 @@
 	padding 240px 0
 	position relative
 	
+
 .gift
 	border-radius 8px
 	background-color #F5F5F5

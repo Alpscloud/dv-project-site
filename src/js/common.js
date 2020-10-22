@@ -64,9 +64,21 @@ $(document).ready(function() {
 	// ========= =========== =========== ===========
 
 	// Popup
-	$('.js-open-popup-btn').on('click',function(e) {
+	$('.js-open-engineer-popup-btn').on('click',function(e) {
 		e.preventDefault();
-		$('.js-popup').fadeIn(300);
+		$('.js-popup-engineer').fadeIn(300);
+		$('html').addClass('is-fixed');
+	});
+
+	$('.js-open-consultation-popup-btn').on('click',function(e) {
+		e.preventDefault();
+		$('.js-popup-consultation').fadeIn(300);
+		$('html').addClass('is-fixed');
+	});
+
+	$('.js-open-mchs-consultation-popup-btn').on('click',function(e) {
+		e.preventDefault();
+		$('.js-popup-mchs').fadeIn(300);
 		$('html').addClass('is-fixed');
 	});
 
@@ -124,10 +136,7 @@ $(document).ready(function() {
 			nextEl: '.js-portfolio-desktop-slider-btn-next',
 			prevEl: '.js-portfolio-desktop-slider-btn-prev',
 		},
-		autoplay: {
-			delay: 5000,
-			disableOnInteraction: false
-		},
+		
 	});
 
 	var portfolioMobileSlider = new Swiper('.js-portfolio-mobile-slider', {
@@ -175,10 +184,7 @@ $(document).ready(function() {
 		slidesPerView: 1,
 		speed: 500,
 		loop: true,
-		autoplay: {
-			delay: 4000,
-			disableOnInteraction: true
-		},
+		
 		spaceBetween: 0,
 		navigation: {
 			nextEl: '.js-feedbacks-slider-btn-next',
@@ -279,7 +285,7 @@ $(document).ready(function() {
 		}).done(function() {
 			self.trigger("reset");
 			self.find(".input__file--name").removeClass('is-active');
-			alert('Спасибо! Ваша заявка отправлена!');
+			window.location.href ='/typage';
 		});
 
 	});

@@ -1,5 +1,14 @@
 {% include '../parts/head.html' %}
 <body>
+	<script>
+(function(w, d, s, h, id) {
+    w.roistatProjectId = id; w.roistatHost = h;
+    var p = d.location.protocol == "https:" ? "https://" : "http://";
+    var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
+    var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+})(window, document, 'script', 'cloud.roistat.com', '991dc1c03e29153dc7593e066d371f7e');
+</script>
+
 	
 	<!-- CONTENT WRAPPER -->
 	<div class="content__wrapper">
@@ -31,7 +40,7 @@
 						<div class="row align-horisontal-start row-gutters projects__row">
 							<!-- Project card -->
 							<div class="project__card--wrapper">
-								<a href="#" class="project__card">
+								<a href="#" class="project__card" target="_blank">
 									<span class="project__card--thumbnail bg" style="background-image: url('img/project-thumbnail.jpg');"></span>
 									<span class="project__card--content">
 										<span class="project__card--title">Дизайнерский офис для ПАО “Промсвязьбанк”</span>
@@ -44,7 +53,7 @@
 
 							<!-- Project card -->
 							<div class="project__card--wrapper">
-								<a href="#" class="project__card">
+								<a href="#" class="project__card" target="_blank">
 									<span class="project__card--thumbnail bg" style="background-image: url('img/project-thumbnail.jpg');"></span>
 									<span class="project__card--content">
 										<span class="project__card--title">Дизайнерский офис для ПАО “Промсвязьбанк”</span>
@@ -57,7 +66,7 @@
 
 							<!-- Project card -->
 							<div class="project__card--wrapper">
-								<a href="#" class="project__card">
+								<a href="#" class="project__card" target="_blank">
 									<span class="project__card--thumbnail bg" style="background-image: url('img/project-thumbnail.jpg');"></span>
 									<span class="project__card--content">
 										<span class="project__card--title">Дизайнерский офис для ПАО “Промсвязьбанк”</span>
@@ -70,7 +79,7 @@
 
 							<!-- Project card -->
 							<div class="project__card--wrapper">
-								<a href="#" class="project__card">
+								<a href="#" class="project__card" target="_blank">
 									<span class="project__card--thumbnail bg" style="background-image: url('img/project-thumbnail.jpg');"></span>
 									<span class="project__card--content">
 										<span class="project__card--title">Дизайнерский офис для ПАО “Промсвязьбанк”</span>
@@ -83,7 +92,7 @@
 
 							<!-- Project card -->
 							<div class="project__card--wrapper">
-								<a href="#" class="project__card">
+								<a href="#" class="project__card" target="_blank">
 									<span class="project__card--thumbnail bg" style="background-image: url('img/project-thumbnail.jpg');"></span>
 									<span class="project__card--content">
 										<span class="project__card--title">Дизайнерский офис для ПАО “Промсвязьбанк”</span>
@@ -96,7 +105,7 @@
 
 							<!-- Project card -->
 							<div class="project__card--wrapper">
-								<a href="#" class="project__card">
+								<a href="#" class="project__card" target="_blank">
 									<span class="project__card--thumbnail bg" style="background-image: url('img/project-thumbnail.jpg');"></span>
 									<span class="project__card--content">
 										<span class="project__card--title">Дизайнерский офис для ПАО “Промсвязьбанк”</span>
@@ -109,7 +118,7 @@
 
 							<!-- Project card -->
 							<div class="project__card--wrapper">
-								<a href="#" class="project__card">
+								<a href="#" class="project__card" target="_blank">
 									<span class="project__card--thumbnail bg" style="background-image: url('img/project-thumbnail.jpg');"></span>
 									<span class="project__card--content">
 										<span class="project__card--title">Дизайнерский офис для ПАО “Промсвязьбанк”</span>
@@ -122,7 +131,7 @@
 
 							<!-- Project card -->
 							<div class="project__card--wrapper">
-								<a href="#" class="project__card">
+								<a href="#" class="project__card" target="_blank">
 									<span class="project__card--thumbnail bg" style="background-image: url('img/project-thumbnail.jpg');"></span>
 									<span class="project__card--content">
 										<span class="project__card--title">Дизайнерский офис для ПАО “Промсвязьбанк”</span>
@@ -134,7 +143,7 @@
 							<!-- //Project card -->
 							<!-- Project card -->
 							<div class="project__card--wrapper">
-								<a href="#" class="project__card">
+								<a href="#" class="project__card" target="_blank">
 									<span class="project__card--thumbnail bg" style="background-image: url('img/project-thumbnail.jpg');"></span>
 									<span class="project__card--content">
 										<span class="project__card--title">Дизайнерский офис для ПАО “Промсвязьбанк”</span>
@@ -146,7 +155,7 @@
 							<!-- //Project card -->
 							<!-- Project card -->
 							<div class="project__card--wrapper">
-								<a href="#" class="project__card">
+								<a href="#" class="project__card" target="_blank">
 									<span class="project__card--thumbnail bg" style="background-image: url('img/project-thumbnail.jpg');"></span>
 									<span class="project__card--content">
 										<span class="project__card--title">Дизайнерский офис для ПАО “Промсвязьбанк”</span>

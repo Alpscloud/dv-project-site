@@ -27,14 +27,14 @@
 			width 0
 			height 100%
 	&__body
-	
+		max-width 460px
 		display inline-block
 		vertical-align middle
 		position relative
 		white-space normal
 	
 	&__content
-		max-width 460px
+		
 		display inline-block
 	
 	&__title
@@ -46,4 +46,46 @@
 		bottom 100%
 		margin-bottom 25px
 		right 0
+		
+
+.popup-with-img
+	.popup__body
+		width 100%
+		max-width 945px
+		
+	.form__block
+		max-width 360px
+		box-shadow none
+		padding 0
+		border-radius 0
+		
+	.btn
+		text-align center
+		
+	.popup__content
+		width 100%
+		position relative
+		padding 40px 50px 50px
+		background-color $white-color
+		position relative
+		z-index 1
+		border-radius 15px
+		box-shadow 0px 25px 55px rgba(0, 0, 0, 0.45)
+		padding 40px 50px 50px 50px
+		
+		&--title
+			font 18px $Bold
+			line-height 144%
+			margin-bottom 13px
+			text-align center
+		img
+			display block
+			position absolute
+			right 0
+			height 100%
+			top 0
+			width auto
+			
+
+
 

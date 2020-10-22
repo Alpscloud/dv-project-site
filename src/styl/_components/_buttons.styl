@@ -24,6 +24,8 @@
 		text-align center
 		line-height 24px
 		
+	
+		
 	&-with-img
 		padding-left 100px
 		padding-right 50px
@@ -38,6 +40,15 @@
 	
 	&:hover
 		background-color darken($accent-color, 10%)
+		
+	&-light
+		background-color $white-color
+		color $accent-color
+		text-transform uppercase
+		&:hover
+			color $accent-color
+			background-color $white-color
+			opacity .75
 		
 	&__close
 		display inline-block

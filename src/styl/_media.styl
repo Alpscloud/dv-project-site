@@ -60,10 +60,10 @@
 			margin-top 40px
 			
 
-	.need-project
-		&__content
-			img
-				margin-right -100px
+	// .need-project
+	// 	&__content
+	// 		img
+	// 			margin-right -100px
 	// Estimate
 	// .estimate__img
 	// 	width 770px
@@ -363,13 +363,20 @@
 	.need-project
 		&__content
 			max-width 100%
-			padding 60px 0
+			padding-top 80px
+			padding-bottom 0
 			&--text
 				&_lg
 					font-size 24px
 					line-height 28px
 			img
-				display none
+				position relative
+				left auto
+				margin-left 0
+				transform none
+				top auto
+				right auto
+				margin-top 40px
 		
 	// Services
 	.sect__services
@@ -454,6 +461,7 @@
 			margin-right 0
 			margin-bottom 15px
 			margin-left 0
+			top auto
 			
 
 	// Benefits
@@ -565,6 +573,14 @@
 			margin-bottom 40px
 		
 +max-screen(900px)
+	.popup-with-img
+		.popup__content
+			img
+				display none
+	
+		.popup__content,
+		.popup__body
+			max-width 460px
 	// Promo
 		
 	.promo
@@ -988,6 +1004,9 @@
 			margin-bottom 15px
 			&:last-child
 				margin-bottom 0
+				
+		.roistat-phone
+			margin-bottom 15px
 	
 	.contacts__block
 		width 100%
@@ -1048,6 +1067,16 @@
 		.input
 			padding-top 11px
 			padding-bottom 11px
+			
+	.popup-with-img
+		.popup__content
+			padding 0
+		.form__block
+			max-width 100%
+			&--title
+				font-size 16px
+				span
+					font-size 14px
 		
 
 	// Contacts
