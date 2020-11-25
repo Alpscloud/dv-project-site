@@ -19,3 +19,23 @@
 		font-size 14px
 		&.is-active
 			color $light-text-color
+			
+	&-absolute
+		position absolute
+		top 25px
+		left 0
+		z-index 1
+		width 100%
+		.breadcrumbs__link
+			&.is-active
+				color $lighter-text-color
+				
+	&-light
+		.breadcrumbs
+			&__item
+				&:before
+					color $white-color
+			&__link
+				color $white-color
+				&.is-active
+					color $lighter-text-color

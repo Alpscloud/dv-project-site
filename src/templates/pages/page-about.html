@@ -1,0 +1,152 @@
+{% include '../parts/head.html' %}
+<body>
+
+	<script>
+
+	</script>
+
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+
+		<!-- Header -->
+		{% include '../parts/sections/blocks/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main ">
+
+			<!-- Section promo -->
+			<section class="sect__promo sect__promo-about sect-decor white-color">
+
+				<!-- Breadcrumbs -->
+				<nav class="breadcrumbs breadcrumbs-light">
+					<div class="container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+							<li class="breadcrumbs__item"><span class="breadcrumbs__link is-active">О компании</span></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- //Breadcrumbs -->
+
+				<div class="container">
+					<div class="about-us text-center">
+						<h1 class="title">О компании DV-project</h1>
+						<p class="about-us__text">Проектирование и монтаж слаботочных систем в Москве и МО</p>
+
+						<div class="promo__video--wrapper">
+							<iframe src="https://www.youtube.com/embed/zD22D1ngWbE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+
+
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section promo -->
+
+			<!-- Section services cards-->
+			{% include '../parts/sections/sect-services-cards.html' %}
+			<!-- Section services cards-->
+
+			<section class="sect__presentation">
+				<div class="container">
+					<div class="presentation">
+						<div class="presentation__block">
+							<img src="img/presentation.png" alt="">
+							<p class="presentation__title sect__title">Получите <span>две презентации</span> о компании</p>
+							<a href="#" class="presentation__btn" rel="nofollow">
+								<span class="presentation__btn--title">Скачать Презентации о компании</span>
+								<span class="presentation__btn--file-size">5.45 Мб.</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+
+			<section class="sect__about-us-details">
+				<div class="container">
+					<div class="about-us-details">
+						<div class="row row-nowrap align-horisontal-center about-us-details__row row-gutters">
+
+
+							<div class="about-us-detail__wrapper">
+								<div class="about-us-detail">
+									<span class="about-us-detail__count">5+ лет</span>
+									<p>Более 5 лет на рынке слаботочных систем</p>
+								</div>
+							</div>
+
+							<div class="about-us-detail__wrapper">
+								<div class="about-us-detail">
+									<span class="about-us-detail__count">200+</span>
+									<p>Более 200 разработанных проектов </p>
+								</div>
+							</div>
+
+							<div class="about-us-detail__wrapper">
+								<div class="about-us-detail">
+									<span class="about-us-detail__count">500тыс.</span>
+									<p>Более 50 000 единиц установленного оборудования</p>
+								</div>
+							</div>
+
+							<div class="about-us-detail__wrapper">
+								<div class="about-us-detail">
+									<span class="about-us-detail__count">400</span>
+									<p>Более 400 выполненных объектов</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+			
+
+
+			
+			<!-- Section licenses -->
+			{% include '../parts/sections/sect-licenses.html' %}
+			<!-- //Section licenses -->
+
+			<!-- Section feedbacks -->
+			{% include '../parts/sections/sect-feedbacks.html' %}
+			<!-- //Section feedbacks -->
+
+			<!-- Section form -->
+			{% include '../parts/sections/sect-form.html' %}
+			<!-- //Section form -->
+
+			<!-- Section faq -->
+			{% include '../parts/sections/sect-faq.html' %}
+			<!-- //Section faq -->
+
+			<!-- Section seo -->
+			{% include '../parts/sections/sect-seo.html' %}
+			<!-- //Section seo -->
+
+			<!-- Section contacts -->
+			{% include '../parts/sections/sect-contacts.html' %}
+			<!-- //Section contacts -->
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/blocks/footer.html' %}
+		<!-- //Footer -->
+
+		{% include '../parts/components/popup.html' %}
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

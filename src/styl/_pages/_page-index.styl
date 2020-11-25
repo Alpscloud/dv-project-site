@@ -1002,4 +1002,130 @@
 			font-family $Bold
 	
 
+	
+
+
+.permalink__wrapper
+	margin-top 60px
+	
+
+// Homepage
+.sect__promo-homepage
+	position relative
+	min-height auto
+	padding-bottom 0
+	.container
+		position relative
+		flex 1
+	
+.homepage-links
+
+	width 100%
+	display flex
+	flex-wrap nowrap
+	z-index 1
+	margin-top 160px
+	
+	.big-link--with-arrow
+		flex 1
+		&:first-child
+			max-width calc(100% - 650px)
+	
+
+.homepage-promo
+	max-width 450px
+	
+.homepage-promo__title
+	font 60px $Light
+	line-height 75px
+	b, strong
+		color $accent-color
+	span
+		display block
+		font-family $Reg
+		font-size 20px
+		line-height 25px
+		margin-top 10px
 		
+.services-cards__row
+	margin-top 30px
+	
+.service-card
+	height 100%
+	width 100%
+	background-color $white-color
+	padding 55px 20px 55px 40px
+	box-shadow 0px 2px 7px rgba(0, 0, 0, 0.05)
+	transition all .17s ease-in-out
+	&__icons
+		display block
+		position relative
+		width 75px
+		height 75px
+		margin-bottom 30px
+		span
+			display block
+			width 100%
+			height 100%
+			position absolute
+			position-center()
+			transition opacity .17s ease-in-out
+			background-position 50% 50%
+			background-repeat no-repeat
+			background-size contain
+			&:last-child
+				opacity 0
+	&__title
+		font 16px $Bold
+		margin-bottom 10px
+		a
+			color $text-color
+	&:hover
+		background-color darken($accent-color, 10%)
+		box-shadow none
+		.service-card
+			&__icon
+				opacity 0
+				&:last-child
+					opacity 1
+			&__title
+				a
+					color $white-color
+		.permalink
+			color $white-color
+			border-color $white-color
+	&__wrapper
+		padding 15px
+		width 25%
+		
+	&__btn
+		display block
+		background-color $accent-color
+		text-align left
+		color $white-color
+		span
+			display block
+			opacity 1 !important
+			background-position 50% 50%
+			background-repeat no-repeat
+			background-size contain
+		.service-card__icon
+			position relative
+			transform none
+			left auto
+			top auto
+			width 75px
+			height 75px
+			margin-bottom 14px
+			
+
+
+
+.permalink
+	border-bottom 2px solid $accent-color
+	font-size 14px
+	color $text-color
+
+		
+.sect__services-cards
+	background $color-bg url('../img/backgrounds/our-services-bg.svg') center center no-repeat / cover

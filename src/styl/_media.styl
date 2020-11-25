@@ -30,6 +30,10 @@
 				left -150px
 
 +max-screen(1200px)
+	.homepage-links 
+		.big-link--with-arrow:first-child
+			max-width 50%
+			
 	// Services
 	.services-additional__col
 		padding-right 0
@@ -115,6 +119,12 @@
 
 	.sect__contacts
 		padding 120px 0
+		
+
+	// Page services
+	.subservice-card
+		&__wrapper
+			width 50%
 
 +max-screen(1100px)
 	.gutters
@@ -142,7 +152,8 @@
 	// Promo
 	.sect__promo
 		min-height auto
-		padding-top 80px
+		&-homepage
+			padding-top 80px
 		
 	.promo__content
 		padding-right 60px
@@ -251,6 +262,11 @@
 		margin-right -15px
 		&-slider__col
 			margin-right 35px
+			
+
+	.service-card__wrapper
+		width 50%
+		flex 1 0 33.3333%
 				
 +max-screen(1000px)
 	// Header
@@ -581,6 +597,26 @@
 		.popup__content,
 		.popup__body
 			max-width 460px
+			
+	.presentation
+		padding 60px 0
+		&__block
+			width 100%
+			img
+				position relative
+				width 100%
+				right auto
+				transform none
+				top auto
+				
+	.presentation__btn
+		width 450px
+		
+	.about-us-detail__wrapper
+		width 50%
+		
+	.about-us-details__row
+		flex-wrap wrap
 	// Promo
 		
 	.promo
@@ -646,6 +682,25 @@
 		&:nth-child(9n+1)
 			width 100%
 			
+
+	.service-card
+		padding 35px 20px
+		&__wrapper
+			padding 5px
+		
+	.services-cards__row
+		margin-left -5px
+		margin-right -5px
+	
+
+
+	// Page services
+	.subservice-card
+		&__title
+			font-size 30px
+			span
+				font-size 20px
+				
 +max-screen(767px)
 	// Portfolio
 	.portfolio__slider
@@ -691,7 +746,35 @@
 				transform translateY(2px)
 				width 100%
 				max-width 100%
-		
+				
+
+	// Homepage
+	.homepage-links
+		flex-wrap wrap
+		margin-top 90px 
+		.big-link--with-arrow
+			width 100%
+			flex none
+			&:first-child
+				max-width 100%
+	
+
+	.service-card
+		&__wrapper
+			width 50%
+			flex 1 0 50%
+
++max-screen(700px)
+	// Page services
+	.subservice-card
+		padding-left 15px
+		padding-right 15px
+		&__notice
+			font-size 14px
+			
+		&__wrapper
+			width 100%
+			
 +max-screen(620px)
 	body
 		font-size 14px
@@ -706,15 +789,53 @@
 		
 	.sect__subtitle
 		margin-bottom 35px
+		
+	.presentation__btn
+		width 100%
+		padding-left 100px
+		background-position left 20px center
+		padding-right 10px
+		
+	.presentation__block
+		img
+			margin-bottom 30px
+			
+	.about-us-detail__wrapper
+		width 100%
+		padding-bottom 0
+		margin-bottom 45px
+		&:last-child
+			margin-bottom 0
+			
+	.sect__about-us-details
+		padding-bottom 60px
 	// Promo
 	.sect__promo
 		padding 35px 0
+		
+		&-homepage
+			padding-bottom 0
+		&-service
+	
+			.breadcrumbs
+				margin-bottom 30px
 		
 	.promo__img
 		display none
 		
 	.title
 		font-size 24px
+		span
+			font-size 18px
+			
+	.sect__promo-services 
+		padding-top 100px
+		.title 
+			span
+				font-size 18px
+				
+	.homepage-links
+		margin-top 60px
 	
 	.subtitle
 		margin-bottom 10px
@@ -747,7 +868,18 @@
 			h2,h3
 				font-size 24px
 				line-height 125%
-				margin-bottom 30px			
+				margin-bottom 30px	
+				
+	.big-link--with-arrow
+		padding 20px
+		font-size 14px
+		
+	.homepage-promo__title
+		font-size 36px
+		line-height 45px
+		span
+			font-size 18px
+			line-height 24px		
 
 	// Services
 	.sect__services
@@ -1161,6 +1293,26 @@
 			padding-left 0
 			padding-right 0
 			
+
+	.service-card
+		&__wrapper
+			width 100%
+			flex 1 0 100%
+			padding-bottom 0
+			margin-bottom 30px
+			&:last-child
+				margin-bottom 0
+				
+
+	.about-us 
+		.promo__video--wrapper
+			height 300px
+			
+	.sect__promo-about
+		.title
+			font-size 30px
+			line-height 36px
+			
 +max-screen(440px)
 	.btn
 		width 100%
@@ -1177,6 +1329,8 @@
 	// Promo
 	.sect__promo
 		padding-bottom 80px
+		&-homepage
+			padding-bottom 0
 	.promo__video--wrapper
 		height 180px
 		

@@ -24,6 +24,14 @@
 		text-align center
 		line-height 24px
 		
+	&-transparent
+		background-color transparent
+		border 1px solid $accent-color
+		color $accent-color
+		&:hover
+			background-color $accent-color
+			color $white-color
+		
 	
 		
 	&-with-img
@@ -164,3 +172,29 @@
 			background-image url('../img/icons/svg/whatsapp.svg')
 		&-telegram
 			background-image url('../img/icons/svg/telegram.svg')
+			
+
+.big-link--with-arrow
+	display inline-block
+	padding 40px
+	background-color $text-color
+	color $white-color
+	font 20px $Light
+	text-align left
+	&:hover
+		background-color darken($accent-color, 10%)
+	&__accent
+		background-color $accent-color
+		
+	span
+		display block
+		position relative
+		padding-right 40px
+		&:before
+			pseudo()
+			position absolute
+			vertical-center()
+			right 0
+			width 30px
+			height 14px
+			background url('../img/icons/svg/link-arrow.svg') no-repeat / contain

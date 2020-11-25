@@ -1,0 +1,53 @@
+{% include '../parts/head.html' %}
+<body>
+	<script>
+(function(w, d, s, h, id) {
+    w.roistatProjectId = id; w.roistatHost = h;
+    var p = d.location.protocol == "https:" ? "https://" : "http://";
+    var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
+    var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+})(window, document, 'script', 'cloud.roistat.com', '991dc1c03e29153dc7593e066d371f7e');
+</script>
+
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+
+		<!-- Header -->
+		{% include '../parts/sections/blocks/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main">
+
+
+			<section class="page-content section__thanks sect-decor white-color">
+				<div class="container text-center" >
+					<p class="thanks-title title-404">404</p>
+					<p class="thanks-text">Извините, такой страницы не существует.<br>Пожалуйста, проверьте правильно ли введен адрес страницы или вернитесь на главную.</p>
+					<a href="index.html" class="btn btn-light">вернуться на главную</a>
+				</div>
+				<!-- //container -->
+			</section>
+
+
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/blocks/footer.html' %}
+		<!-- //Footer -->
+
+		{% include '../parts/components/popup.html' %}
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>
