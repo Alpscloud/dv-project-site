@@ -18,3 +18,32 @@
 .title-404
 	font 90px $Bold
 	
+.page-contacts
+	padding 25px 0 180px
+	.breadcrumbs
+		margin-bottom 180px
+
+
+.company-requisits
+	margin-top 35px
+	
+.block-with-ic
+	position relative
+	padding-left 30px
+	&:before
+		pseudo()
+		position absolute
+		vertical-center()
+		left 0
+		width 20px
+		height 20px
+		background-repeat no-repeat
+		background-size contain
+		
+	&__address
+		&:before
+			background-image url('../img/icons/svg/address-light.svg')
+	&__worktime
+		&:before
+			background-image url('../img/icons/svg/worktime-light.svg')
+	

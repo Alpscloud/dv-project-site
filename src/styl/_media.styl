@@ -64,15 +64,7 @@
 			margin-top 40px
 			
 
-	// .need-project
-	// 	&__content
-	// 		img
-	// 			margin-right -100px
-	// Estimate
-	// .estimate__img
-	// 	width 770px
-	// 	height 805px
-		
+
 	// ADvatages
 	.advantages
 		&__content
@@ -120,11 +112,21 @@
 	.sect__contacts
 		padding 120px 0
 		
+	.page-contacts
+		padding-top 25px
+		
+		.breadcrumbs
+			margin-bottom 100px
+		
 
 	// Page services
 	.subservice-card
 		&__wrapper
 			width 50%
+			
+	.skdu-offer
+		img
+			margin-left 60px
 
 +max-screen(1100px)
 	.gutters
@@ -333,10 +335,10 @@
 					&:after
 						display none
 				&:hover
-					.sublist
+					.sub-menu
 						margin-top 10px
 				
-			.sublist
+			.sub-menu
 				position relative
 				top auto
 				right auto
@@ -443,6 +445,18 @@
 			padding 30px 15px
 			background $accent-color url('../img/backgrounds/pattern-bg.png') 50% 50% no-repeat / cover
 	
+
+	.skdu-offer
+		max-width 100%
+		img
+			margin-left 0
+			position relative
+			transform none
+			left auto
+			top auto
+			margin-top 50px
+			width 100%
+			
 		
 	// Help
 	.help
@@ -478,6 +492,9 @@
 			margin-bottom 15px
 			margin-left 0
 			top auto
+			
+	.lead__img
+		width 100%
 			
 
 	// Benefits
@@ -567,6 +584,12 @@
 		padding-top 80px
 		padding-bottom 0
 		
+	.page-contacts
+		padding-top 25px
+		
+		.breadcrumbs
+			margin-bottom 70px
+		
 	.map__wrapper
 		width 100%
 		height 400px
@@ -654,6 +677,12 @@
 				bottom 0
 				right 0
 				
+	.sect__guarantee-skdu
+		.advantages
+			&__content
+				background-image url('../img/backgrounds/skdu-adv-bg.svg')
+		
+	
 
 	.promo-offer
 		&__content
@@ -776,6 +805,9 @@
 			width 100%
 			
 +max-screen(620px)
+	.licenses__slider--navigation
+		display block
+		
 	body
 		font-size 14px
 	.gutters
@@ -789,6 +821,9 @@
 		
 	.sect__subtitle
 		margin-bottom 35px
+		
+	.skdu-help
+		width 100%
 		
 	.presentation__btn
 		width 100%
@@ -920,6 +955,12 @@
 		ul
 			li
 				font-size 14px
+				
+	.skdu-guarantee__item
+		flex-direction column
+		&--ic
+			margin-right 0
+			margin-bottom 30px
 				
 
 	// Help
@@ -1254,6 +1295,16 @@
 			margin-bottom 12px
 			&:last-child
 				margin-bottom 0
+				
+	.page-contacts
+		padding-top 25px
+		
+		.breadcrumbs
+			margin-bottom 50px
+			
+		.sect__title
+			display block
+			margin-bottom 30px
 		
 	
 	.page-content
@@ -1312,6 +1363,19 @@
 		.title
 			font-size 30px
 			line-height 36px
+			
+
+	.title-skdu
+		b, strong
+			font-size 20px
+		span
+			font-size 16px
+			
+	.skdu-advantage
+		font-size 16px
+		line-height 24px
+		&__wrapper
+			width 50%
 			
 +max-screen(440px)
 	.btn

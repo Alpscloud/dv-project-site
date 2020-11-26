@@ -15,127 +15,254 @@
 		<!-- //Header -->
 
 		<!-- Main -->
-		<main class="main ">
+		<main class="main page-lead">
 
 			<!-- Section promo -->
-			<section class="sect__promo color-bg">
+			<section class="sect__promo-lead">
+
+				<!-- Breadcrumbs -->
+				<nav class="breadcrumbs">
+					<div class="container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+							<li class="breadcrumbs__item"><span class="breadcrumbs__link is-active">Выполненные работы</span></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- //Breadcrumbs -->
 
 				<div class="container">
-					<div class="promo">
 
-						<div class="promo__img">
-							<img src="img/promo-img.png" alt="">
+
+
+					<div class="promo-lead__content">
+						<h1 class="title">Узнайте как <strong>успешно пройти пожарную проверку</strong> и избежать штрафов от МЧС</h1>
+						<p><strong>Получите методичку и видеоинструкцию</strong>, которые помогут вам<br>подготовиться к прохождению проверки от МЧС - <span>БЕСПЛАТНО</span></p>
+						<a href="#" class="btn">Получить материалы БЕСПЛАТНО</a>
+
+						<div class="promo-lead__img">
+							<img src="img/promo-lead-img.png" alt="">
 						</div>
-						<div class="row align-horisontal-between promo__row row-nowrap">
+					</div>
 
-							<div class="promo__content">
-								<h1 class="subtitle">Проектирование, монтаж и обслуживание пожарной сигнализации в Москве и МО</h1>
-								<h2 class="title">Монаж пожарной сигнализации, которая гарантированно пройдет проверку МЧС и предупредит пожар </h2>
-								
+					
+					
 
-								<div class="commercial-proposal">
-									<p class="commercial-proposal__text lighter-text-color">Получите коммерческое предложение на монтаж систем<br>пожарной безопасности</p>
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section promo -->
 
-									<a href="#sectForm" class="btn btn-with-img js-smooth-scroll-link">
-										<span class="btn__content">
-											<img src="img/button-img.png" alt="Получить коммерческое предложение" class="btn__img">
-											<span class="btn__text">Получить смету и КП</span>
-										</span>
-									</a>
+			<section class="sect__documents color-bg">
 
+
+				<div class="container">
+
+					<div class="documents__block">
+						<div class="row align-horisontal-end">
+
+							<div class="documents">
+
+
+								<img src="img/brandbook.png" alt="" class="documents__img lead__img">
+
+
+								<h2 class="sect__title sect__title--gutter">Из файлов вы узнаете</h2>
+
+								<div class="decor-list">
+									<ul>
+										<li>Какие бывают проверки и когда их ждать</li>
+										<li>Какие бывают штрафы и за что из выписывают</li>
+										<li>Какие у вас должны быть системы безопасности</li>
+										<li>Какие у вас должны быть документы</li>
+										<li>Какие еще средства защиты нужны на объекте</li>
+										<li>Чего не должно быть на объекте во время проверки</li>
+										<li>Какие ошибки чаще всего находят инспектора</li>
+										<li>Как выбрать правильного исполнителя</li>
+										<li>Какие нормативы стоит знать и проверять </li>
+									</ul>
+								</div>
+
+								<a href="#sectForm" class="btn js-smooth-scroll-link">
+									<span class="btn__content">
+										<span class="btn__text">Получить материалы БЕСПЛАТНО</span>
+									</span>
+								</a>
+
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</section>
+
+			<section class="sect__about-us-details">
+				<div class="container">
+					<h2 class="white-color sect__title text-center">Имеем все необходимые лицензии и допуски</h2>
+					<div class="about-us-details">
+						<div class="row row-nowrap align-horisontal-center about-us-details__row row-gutters">
+
+
+							<div class="about-us-detail__wrapper">
+								<div class="about-us-detail">
+									<span class="about-us-detail__count">5+ лет</span>
+									<p>Более 5 лет на рынке слаботочных систем</p>
 								</div>
 							</div>
 
-							<div class="promo__video">
-								<div class="promo__video--wrapper">
-									<iframe src="https://www.youtube.com/embed/zD22D1ngWbE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<div class="about-us-detail__wrapper">
+								<div class="about-us-detail">
+									<span class="about-us-detail__count">200+</span>
+									<p>Более 200 разработанных проектов </p>
 								</div>
+							</div>
 
-								<p class="promo__video--notice">Посмотрите видео о компании и наших услугах</p>
+							<div class="about-us-detail__wrapper">
+								<div class="about-us-detail">
+									<span class="about-us-detail__count">500тыс.</span>
+									<p>Более 50 000 единиц установленного оборудования</p>
+								</div>
+							</div>
 
+							<div class="about-us-detail__wrapper">
+								<div class="about-us-detail">
+									<span class="about-us-detail__count">400</span>
+									<p>Более 400 выполненных объектов</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- //container -->
 			</section>
-			<!-- //Section promo -->
 
-			{% include '../parts/sections/sect-offer.html' %}
+			<section class="sect__licenses gutters">
 
+				<div class="container">
 
-			<!-- Section services -->
-			{% include '../parts/sections/sect-services.html' %}
-			<!-- //Section services -->
+					<!-- Clients -->
+					<div class="clients">
+						<div class="row align-vertical-center align-horisontal-start clients__row">
+							<div class="clients__title--col">
+								<h3 class="sect__title"><span>Успешно работаем</span> с клиентами разного уровня</h3>
+							</div>
 
-			<!-- Sect services additional -->
-			{% include '../parts/sections/sect-services-additional.html' %}
-			<!-- //Sect services additional -->
+							<div class="clients__logos">
+								<div class="client__logo">
+									<img src="img/clients/1.png" alt="">
+								</div>
 
-			<!-- Section help -->
-			{% include '../parts/sections/sect-help.html' %}
-			<!-- //Section help -->
+								<div class="client__logo">
+									<img src="img/clients/2.png" alt="">
+								</div>
 
-			<!-- Section project -->
-			{% include '../parts/sections/sect-need-project.html' %}
-			<!-- //Section project -->
+								<div class="client__logo">
+									<img src="img/clients/3.png" alt="">
+								</div>
 
-			<!-- SEction guarantees -->
-			{% include '../parts/sections/sect-guarantee.html' %}
-			<!-- //SEction guarantees -->
+								<div class="client__logo">
+									<img src="img/clients/4.png" alt="">
+								</div>
 
-			<!-- Section documents -->
-			{% include '../parts/sections/sect-documents.html' %}
-			<!-- //Section documents -->
+								<div class="client__logo">
+									<img src="img/clients/5.png" alt="">
+								</div>
 
-			<!-- Section benefits -->
-			{% include '../parts/sections/sect-benefits.html' %}
-			<!-- //Section benefits -->
+								<div class="client__logo">
+									<img src="img/clients/6.png" alt="">
+								</div>
 
-			<!-- Sect  estimate -->
-			{% include '../parts/sections/sect-estimate.html' %}
-			<!-- //Sect  estimate -->
+								<div class="client__logo">
+									<img src="img/clients/7.png" alt="">
+								</div>
 
-			<!-- Section advantages -->
-			{% include '../parts/sections/sect-advantages.html' %}
-			<!--// Section advantages -->
+								<div class="client__logo">
+									<img src="img/clients/8.png" alt="">
+								</div>
 
-			<!-- Section experience -->
-			{% include '../parts/sections/sect-experience.html' %}
-			<!--// Section experience -->
-
-			<!-- Section problems -->
-			{% include '../parts/sections/sect-problems.html' %}
-			<!--// Section problems -->
+							</div>
+						</div>
+					</div>
+					<!-- //Clients -->
+				</div>
+				<!-- //container -->
+			</section>
 
 			<!-- Section portfolio -->
 			{% include '../parts/sections/sect-portfolio.html' %}
 			<!--// Section portfolio -->
 
-			<!-- Section licenses -->
-			{% include '../parts/sections/sect-licenses.html' %}
-			<!-- //Section licenses -->
+			<section class="sect__licenses gutters">
+				<h2 class="text-center sect__title sect__title--gutter-sm container">Выполнили монтаж более чем на <span>400 объектах</span></h2>
 
-			<!-- Section feedbacks -->
-			{% include '../parts/sections/sect-feedbacks.html' %}
-			<!-- //Section feedbacks -->
+				<div class="container">
+					<div class="licenses__slider">
+						<div class="swiper-container js-licenses-slider">
+							<div class="swiper-wrapper">
+								<!-- Slide -->
+								<div class="swiper-slide">
+									<div class="license__slide">
+										<a href="img/license-1.jpg" class="license fancy-link" data-fancybox>
+											<img src="img/license-1.jpg" alt="">
+										</a>
+										<p>Лицензия МЧС</p>
+									</div>
+								</div>
+								<!-- //Slide -->
+
+								<!-- Slide -->
+								<div class="swiper-slide">
+									<div class="license__slide">
+										<a href="img/license-2.jpg" class="license fancy-link" data-fancybox>
+											<img src="img/license-2.jpg" alt="">
+										</a>
+										<p>Свидетельство о регистрации</p>
+									</div>
+								</div>
+								<!-- //Slide -->
+
+								<!-- Slide -->
+								<div class="swiper-slide">
+									<div class="license__slide">
+										<a href="img/license-3.jpg" class="license fancy-link" data-fancybox>
+											<img src="img/license-3.jpg" alt="">
+										</a>
+										<p>Допуск СРО</p>
+									</div>
+								</div>
+								<!-- //Slide -->
+							</div>
+						</div>
+
+						<!-- Navigation -->
+						<div class="text-center licenses__slider--navigation">
+							<button class="slider__btn--arrow js-licenses-slider-btn-prev" type="button">
+								<svg viewBox="0 0 25 18" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.340518 9.47406L7.78011 16.9532C8.23401 17.4095 8.97016 17.4095 9.42407 16.9532C9.87807 16.4968 9.87807 15.7569 9.42407 15.3005L3.9689 9.81633L23.8376 9.81633C24.4796 9.81633 25.0001 9.29307 25.0001 8.64772C25.0001 8.00246 24.4796 7.47911 23.8376 7.47911L3.9689 7.47911L9.42389 1.99496C9.87789 1.53855 9.87789 0.798674 9.42389 0.342263C9.19698 0.114243 8.89939 4.99784e-07 8.6019 4.73776e-07C8.30441 4.47769e-07 8.00692 0.114243 7.77992 0.342263L0.340518 7.82137C-0.113483 8.27778 -0.113483 9.01765 0.340518 9.47406Z" />
+								</svg>
+
+							</button>
+							<button class="slider__btn--arrow js-licenses-slider-btn-next" type="button">
+								<svg viewBox="0 0 25 19" xmlns="http://www.w3.org/2000/svg">
+									<path d="M24.6595 8.67846L17.22 1.23887C16.766 0.78496 16.0299 0.78496 15.576 1.23887C15.122 1.69287 15.122 2.42883 15.576 2.88283L21.0312 8.338L1.16244 8.338C0.520492 8.338 0 8.8585 0 9.50044C0 10.1423 0.520492 10.6629 1.16244 10.6629L21.0312 10.6629L15.5762 16.118C15.1222 16.5721 15.1222 17.308 15.5762 17.762C15.8031 17.9888 16.1007 18.1025 16.3982 18.1025C16.6956 18.1025 16.9931 17.9888 17.2201 17.762L24.6595 10.3224C25.1135 9.86842 25.1135 9.13246 24.6595 8.67846Z"/>
+								</svg>
+
+							</button>
+
+						</div>
+						<!-- //Navigation -->
+					</div>
+
+				</div>
+				<!-- //container -->
+			</section>
+
 
 			<!-- Section form -->
 			{% include '../parts/sections/sect-form.html' %}
 			<!-- //Section form -->
-
-			<!-- Section faq -->
-			{% include '../parts/sections/sect-faq.html' %}
-			<!-- //Section faq -->
-
-			<!-- Section seo -->
-			{% include '../parts/sections/sect-seo.html' %}
-			<!-- //Section seo -->
-
-			<!-- Section contacts -->
-			{% include '../parts/sections/sect-contacts.html' %}
-			<!-- //Section contacts -->
-
 
 		</main>
 		<!-- //Main -->

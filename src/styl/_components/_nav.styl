@@ -37,18 +37,18 @@
 				background url('../img/icons/svg/nav-link-arrow.svg') 50% 50% no-repeat / 6px 6px
 				
 		&:hover
-			.sublist
+			.sub-menu
 				opacity 1
 				visibility visible
-				margin-top 5px
+				margin-top 0
 			
 
-.sublist
+.sub-menu
 	position absolute
 	top 100%
 	right 0
-	background-color $light-color
-	z-index 3
+	background-color $white-color
+	z-index 5
 	border 1px solid #d1d1d1
 	width 200px
 	box-shadow 0 0 3px 3px rgba($dark-color, .05)
@@ -68,15 +68,5 @@
 		color $dark-color
 		font-size 14px
 		
-	&:before
-		pseudo()
-		position absolute
-		right 10px
-		top -6px
-		width 10px
-		height 10px
-		background-color $light-color
-		border-left 1px solid #d1d1d1
-		border-top 1px solid #d1d1d1
-		transform rotate(45deg)
+	
 		
