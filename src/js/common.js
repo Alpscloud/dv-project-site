@@ -158,6 +158,25 @@ $(document).ready(function() {
 		
 	});
 
+	var anotherProjectsSlider = new Swiper('.js-another-projects-slider', {
+		slidesPerView: 1,
+		loop: true,
+		spaceBetween: 30,
+		pagination: {
+			el: '.js-another-projects-slider-pagination',
+			clickable: true
+		},
+		breakpoints: {
+			1049: {
+				slidesPerView: 3
+			},
+			700: {
+				slidesPerView: 2
+			}
+		}
+		
+	});
+
 	var licensesSlider = new Swiper('.js-licenses-slider', {
 		slidesPerView: 'auto',
 		touchRatio: 1,

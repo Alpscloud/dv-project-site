@@ -71,13 +71,13 @@
 <body>
 
 	<script>
-(function(w, d, s, h, id) {
-    w.roistatProjectId = id; w.roistatHost = h;
-    var p = d.location.protocol == "https:" ? "https://" : "http://";
-    var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
-    var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
-})(window, document, 'script', 'cloud.roistat.com', '991dc1c03e29153dc7593e066d371f7e');
-</script>
+		(function(w, d, s, h, id) {
+			w.roistatProjectId = id; w.roistatHost = h;
+			var p = d.location.protocol == "https:" ? "https://" : "http://";
+			var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
+			var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+		})(window, document, 'script', 'cloud.roistat.com', '991dc1c03e29153dc7593e066d371f7e');
+	</script>
 
 	
 	<!-- CONTENT WRAPPER -->
@@ -282,6 +282,61 @@
 						</div>
 					</div>
 
+				</div>
+				<!-- //container -->
+			</section>
+
+
+			<section class="sect__another-projects gutters">
+				<h2 class="container text-center sect__title">Другие проекты</h2>
+				<div class="container">
+					<div class="another-projects-slider">
+						<div class="swiper-container js-another-projects-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="page-single.html" class="project__card bg" target="_blank" style="background-image: url('img/project-thumbnail.jpg');">
+										<span class="project__card--content">
+											<span class="project__card--title">Дизайнерский офис для ПАО “Промсвязьбанк”</span>
+											<span class="project__card--preview">Монтаж системы апс на 8000м2 в сжатые сроки</span>
+											<span class="project__card--link">Подробнее</span>
+										</span>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="page-single.html" class="project__card bg" target="_blank" style="background-image: url('img/project-thumbnail.jpg');">
+										<span class="project__card--content">
+											<span class="project__card--title">Дизайнерский офис для ПАО “Промсвязьбанк”</span>
+											<span class="project__card--preview">Монтаж системы апс на 8000м2 в сжатые сроки</span>
+											<span class="project__card--link">Подробнее</span>
+										</span>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="page-single.html" class="project__card bg" target="_blank" style="background-image: url('img/project-thumbnail.jpg');">
+										<span class="project__card--content">
+											<span class="project__card--title">Дизайнерский офис для ПАО “Промсвязьбанк”</span>
+											<span class="project__card--preview">Монтаж системы апс на 8000м2 в сжатые сроки</span>
+											<span class="project__card--link">Подробнее</span>
+										</span>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="page-single.html" class="project__card bg" target="_blank" style="background-image: url('img/project-thumbnail.jpg');">
+										<span class="project__card--content">
+											<span class="project__card--title">Дизайнерский офис для ПАО “Промсвязьбанк”</span>
+											<span class="project__card--preview">Монтаж системы апс на 8000м2 в сжатые сроки</span>
+											<span class="project__card--link">Подробнее</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slider__pagination js-another-projects-slider-pagination"></div>
+					</div>
 				</div>
 				<!-- //container -->
 			</section>
