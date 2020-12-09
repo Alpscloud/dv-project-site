@@ -28,11 +28,21 @@
 			&-bottom
 				right auto
 				left -150px
+				
+	.sect__penalties
+		&:after
+			transform none
+			top 0
 
 +max-screen(1200px)
 	.homepage-links 
 		.big-link--with-arrow:first-child
 			max-width 50%
+			
+	.sect__penalties
+		padding-bottom 220px
+		&:after
+			display none
 			
 	// Services
 	.services-additional__col
@@ -150,6 +160,28 @@
 		max-width 260px
 		span
 			margin-left 10px
+			
+
+	.sect__penalties
+		padding-bottom 220px
+		
+
+	.promo-lead__img
+		position relative
+		transform none
+		left auto
+		width 100%
+		img
+			width 100%
+		
+	.sect__promo-lead .breadcrumbs
+		margin-bottom 40px
+		
+	.promo-lead__content
+		max-width 100%
+		
+	.sect__promo-lead
+		padding-bottom 80px
 			
 	// Promo
 	.sect__promo
@@ -777,6 +809,16 @@
 				max-width 100%
 				
 
+	.penalties-table 
+		table
+			font-size 14px
+		thead 
+			td
+				font-size 18px
+		td
+			padding 15px
+				
+
 	// Homepage
 	.homepage-links
 		flex-wrap wrap
@@ -879,10 +921,14 @@
 	.promo__img
 		display none
 		
-	.title
+	.title,
+	.sect__promo-lead .title
 		font-size 24px
 		span
 			font-size 18px
+			
+	.sect__promo-lead .title
+		line-height 30px
 			
 	.sect__promo-services 
 		padding-top 100px
@@ -1016,6 +1062,23 @@
 			
 	.sect__title--gutter
 		margin-bottom 15px
+		
+
+	.sect__penalties
+		padding-bottom 240px
+		
+	.penalties-table__notice
+		font-size 16px
+		margin-top 25px
+		
+	.penalties-table 
+		table
+			font-size 12px
+		td
+			padding 10px
+		thead
+			td
+				font-size 16px
 		
 
 	// Guarantee
