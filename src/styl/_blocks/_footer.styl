@@ -33,12 +33,19 @@
 			p
 				font-size 14px
 				
+		&--col
+			max-width 370px
+				
 	&__menus
-
-		margin 0 50px
+		flex 1
+		margin-left 50px
+		display flex
+		justify-content space-between
 		
 	&__menu
 		margin-bottom 35px
+		padding-left 15px
+		padding-right 15px
 		&--title
 			margin-bottom 12px
 		&:last-child
@@ -53,9 +60,42 @@
 			text-decoration underline
 			&:hover
 				text-decoration none
+
+	
 				
-	&__share
+	&__sharing
+		width 310px
+		flex none
 		&--title
 			margin-bottom 20px
+			
+
+.footer-menu__columns
+	display flex
+	flex-wrap wrap
+	justify-content flex-start
+	ul
+		width 50%
+		padding 0 15px
+		padding 0 15px
+			
+
 .copyright
 	max-width 550px
+	
+
+.footer-contacts
+	width 100%
+	margin-top 20px
+	.contacts__row
+		flex-wrap wrap
+		display inline-flex
+		flex-direction column
+		a
+			margin-bottom 15px
+			&:last-child
+				margin-bottom 0
+	p
+		margin-bottom 15px
+		&:last-child
+			margin-bottom 0

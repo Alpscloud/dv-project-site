@@ -219,6 +219,9 @@ b, strong
 		
 
 .content
+	*
+		&:last-child
+			margin-bottom 0
 	h2
 		font 45px $Light
 		line-height 60px
@@ -227,9 +230,71 @@ b, strong
 		font 30px $Light
 		line-height 45px
 		margin-bottom 20px
+		
+	h4
+		font 25px $Light
+		
+	h5,h6
+		font 18px $Light
 	
 	b, strong
 		font-family $Bold
+		
+	ul, ol
+		li
+			display block
+			position relative
+			margin-bottom 10px
+			
+			&:last-child
+				margin-bottom 0
+				
+	ul, ol
+		margin-bottom 20px
+				
+	ul
+		li
+			&:before
+				pseudo()
+				width 4px
+				height 4px
+				border-radius 50%
+				margin-right 4px
+				background-color $text-color
+				vertical-align middle
+				
+	ol
+		counter-reset list
+		li
+			&:before
+				counter-increment list
+				content counter(list) ". "
+				display inline-block
+				margin-right 4px
+				
+
+
+	a
+		color $text-color
+		text-decoration underline
+		&:hover
+			text-decoration none
+			color $accent-color
+			
+	div
+		margin-bottom 20px
+
+
+
+.children 
+	padding-left 15px
+	padding-top 5px
+
+
+#wp-realtime-sitemap-pages
+	h3
+		display none
+				
 	
 
 // ========== ========== ========== ========== ========== ==========
