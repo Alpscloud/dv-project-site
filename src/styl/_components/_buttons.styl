@@ -85,6 +85,15 @@
 			border-color $white-color
 			svg
 				fill-opacity 1
+				
+	&-toggle
+		display none
+		width 20px
+		height 20px
+		background url('../img/icons/svg/nav-link-arrow.svg') 50% no-repeat / 12px
+		will-change transform
+		&.is-toggled
+			transform rotate(-180deg)
 		
 	&__search
 		padding 20px 30px

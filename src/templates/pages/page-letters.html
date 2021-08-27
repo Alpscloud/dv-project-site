@@ -1,0 +1,132 @@
+{% include '../parts/head.html' %}
+<body>
+	<script>
+(function(w, d, s, h, id) {
+    w.roistatProjectId = id; w.roistatHost = h;
+    var p = d.location.protocol == "https:" ? "https://" : "http://";
+    var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
+    var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+})(window, document, 'script', 'cloud.roistat.com', '991dc1c03e29153dc7593e066d371f7e');
+</script>
+
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+
+		<!-- Header -->
+		{% include '../parts/sections/blocks/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main main-page-inside">
+
+			<!-- Breadcrumbs -->
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__link is-active">Благодарственные письма</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //Breadcrumbs -->
+
+			<h1 class="container text-center sect__title page-title"><span>Благодарственные</span> письма</h1>
+
+			<section class="page-content gutter-bottom">
+				<div class="container">
+					<div class="projects">
+						<div class="row align-horisontal-start row-gutters projects__row">
+							<div class="letter__wrapper col__3 col-gutters">
+								<div class="letter">	
+									<a href="img/license-1.jpg" class="fancy-link letter__img" data-fancybox="letters">
+										<img src="img/license-1.jpg" alt="">
+									</a>
+									<h2 class="letter__title">Лицензия 1</h2>
+								</div>
+							</div>
+
+							<div class="letter__wrapper col__3 col-gutters">
+								<div class="letter">	
+									<a href="img/license-2.jpg" class="fancy-link letter__img" data-fancybox="letters">
+										<img src="img/license-2.jpg" alt="">
+									</a>
+									<h2 class="letter__title">Лицензия 2</h2>
+								</div>
+							</div>
+
+							<div class="letter__wrapper col__3 col-gutters">
+								<div class="letter">	
+									<a href="img/license-3.jpg" class="fancy-link letter__img" data-fancybox="letters">
+										<img src="img/license-3.jpg" alt="">
+									</a>
+									<h2 class="letter__title">Лицензия 3</h2>
+								</div>
+							</div>
+
+							<div class="letter__wrapper col__3 col-gutters">
+								<div class="letter">	
+									<a href="img/license-1.jpg" class="fancy-link letter__img" data-fancybox="letters">
+										<img src="img/license-1.jpg" alt="">
+									</a>
+									<h2 class="letter__title">Лицензия 1</h2>
+								</div>
+							</div>
+
+							<div class="letter__wrapper col__3 col-gutters">
+								<div class="letter">	
+									<a href="img/license-2.jpg" class="fancy-link letter__img" data-fancybox="letters">
+										<img src="img/license-2.jpg" alt="">
+									</a>
+									<h2 class="letter__title">Лицензия 2</h2>
+								</div>
+							</div>
+
+							<div class="letter__wrapper col__3 col-gutters">
+								<div class="letter">	
+									<a href="img/license-3.jpg" class="fancy-link letter__img" data-fancybox="letters">
+										<img src="img/license-3.jpg" alt="">
+									</a>
+									<h2 class="letter__title">Лицензия 3</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+
+		
+
+				</div>
+				<!-- //container -->
+			</section>
+
+
+			<!-- Section project -->
+			{% include '../parts/sections/sect-need-project.html' %}
+			<!-- //Section project -->
+
+
+		
+
+			<!-- Section contacts -->
+			{% include '../parts/sections/sect-contacts.html' %}
+			<!-- //Section contacts -->
+
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/blocks/footer.html' %}
+		<!-- //Footer -->
+
+		{% include '../parts/components/popup.html' %}
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

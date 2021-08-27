@@ -33,6 +33,15 @@
 		&:after
 			transform none
 			top 0
+			
+
+	.quiz-promo-block__offer
+		padding-left 	20px
+		
+	.quiz-promo-block__btn
+		.btn
+			&:before
+				left 0
 
 +max-screen(1200px)
 	.homepage-links 
@@ -166,6 +175,9 @@
 	// Header
 	.header__nav
 		margin-left 15px
+		
+	.header__row
+		position static
 	.nav
 		margin-right 15px
 		
@@ -353,16 +365,16 @@
 			padding-right 65px
 			
 		&__nav
-			position absolute
+			position fixed
 			top 0
 			left 0
 			width 100%
 			z-index 5
 			background-color $white-color
 			margin-left 0
-			padding-left 15px
-			padding-right 15px
-			// min-height 100vh
+			padding 0
+			height 100vh
+			overflow-y auto
 			padding-bottom 80px
 			display none
 			flex none
@@ -374,7 +386,7 @@
 			.header__contacts
 				background-color transparent
 				order 1
-				padding-left 0
+				padding-left 30px
 				padding-right 0
 				
 			.nav
@@ -382,22 +394,30 @@
 				width 100%
 				margin-right 0
 				background-color #fff
-				>
-					ul
-						margin-left -15px
-						margin-right -15px
+				padding-left 30px
+				padding-top 20px
+				border-top 1px solid #F5F5F5
+			
 				li
 					display block
 					margin-right 0
 					text-align left
-					padding 15px
-					border-bottom 1px solid #E9E9E9
-					&:first-child
-						border-top 1px solid #E9E9E9
+					padding 0
+					margin-bottom 25px
+					.btn-toggle
+						display inline-block	
+						vertical-align middle
+						margin-left 30px
+					&:last-child
+						margin-bottom 0
+					
+				a
+					font-family $Med
+					
 				
 
 			.menu-item-has-children
-				background-color $alternate-color-bg 
+				
 				> a
 					padding-right 0
 					&:after
@@ -407,26 +427,41 @@
 						margin-top 10px
 				
 			.sub-menu
+				display none
+				transition none
 				position relative
 				top auto
 				right auto
-				width 100%
-				margin-top 10px
+				width calc(100% + 60px)
+				margin-top 0
 				opacity 1
 				visibility visible
 				box-shadow none
 				border none
-				background-color  $alternate-color-bg 
+				margin-left -30px
+				margin-right -15px
+				margin-bottom -10px
+				&:before
+					display none
+				ul
+					display block
 				a
-					color $accent-color
+					padding-left 85px
+					font-size 12px
+					padding-top 15px
+					padding-bottom 15px
 				li
 					border none !important
-					padding-left 15px
-					padding-top 0
-					padding-bottom 0
-					margin-bottom 12px
+					padding 0
+					width 100%
+					margin 0
 					&:last-child
 						margin-bottom 0
+						
+					img
+						width 25px !important
+						height 25px !important
+						left 30px
 				&:before
 					display none
 					
@@ -733,6 +768,15 @@
 		
 	.lead-benefit__text--title:after
 		display none
+		
+
+	.quiz-promo-block
+		padding-top 100px
+		&__img
+			width 900px
+			
+
+			
 			
 +max-screen(900px)
 	.popup-with-img
@@ -951,6 +995,17 @@
 		&__wrapper
 			width 50%
 			flex 1 0 50%
+			
+
+	.quiz-promo-block
+		padding-top 50px
+		padding-bottom 0
+		&__img
+			width 100%
+			position relative
+			right auto
+			bottom auto
+			
 
 +max-screen(700px)
 	// Page services
@@ -962,6 +1017,9 @@
 			
 		&__wrapper
 			width 100%
+			
+	.letter__wrapper
+		width 50%
 			
 +max-screen(620px)
 	.licenses__slider--navigation
@@ -1622,6 +1680,29 @@
 			line-height 1
 		&__img
 			height auto
+			
+
+	.quiz-promo-block
+		padding-top 60px
+		.title
+			font-size 26px
+			line-height 34px
+			margin-bottom 25px
+			span
+				font-size inherit
+				
+		&__offer
+			padding-left 30px
+			flex-wrap wrap
+			p
+				max-width 100%
+				width 100%
+				font-size 12px
+			
+		&__btn
+			.btn
+				&:before
+					left 0
 						
 +max-screen(440px)
 	.btn
@@ -1661,6 +1742,12 @@
 	.gift
 		padding 160px 20px 30px 20px
 		background-position top -15px left
+		
+
+	.letter__wrapper
+		width 100%
+		&:last-child
+			margin-bottom 0
 		
 +max-screen-height(800px)
 	.popup

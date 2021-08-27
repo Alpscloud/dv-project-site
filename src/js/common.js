@@ -49,6 +49,20 @@ $(document).ready(function() {
 			timer; // for disable scroll
 	// ========= =========== =========== ===========
 
+
+	$('.menu-item-has-children').each(function() {
+		var btn = '<button class="btn-toggle js-toggle-submenu-btn" type="button"></button>';
+		var link = $(this).find('> a');
+		$(btn).insertAfter(link);
+
+	});
+
+	$('.js-toggle-submenu-btn').on('click', function(e) {
+		e.preventDefault();
+		$(this).next('ul').stop().slideToggle(200);
+		$(this).toggleClass('is-toggled');
+	});
+
 	
 
 
@@ -125,6 +139,7 @@ $(document).ready(function() {
 		e.preventDefault();
 
 		$(this).toggleClass('is-active');
+		$('html').toggleClass('is-fixed');
 
 		$('.js-nav').stop().slideToggle(150);
 	});

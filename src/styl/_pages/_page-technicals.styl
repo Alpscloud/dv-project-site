@@ -54,3 +54,106 @@
 			&:before
 				background-image url('../img/icons/svg/worktime-accent.svg')
 	
+
+
+.sect__promo-quiz
+	position relative
+	overflow hidden
+	
+	background-position 50%
+	background-size cover
+	background-repeat no-repeat
+	&:before
+		pseudo()
+		position absolute
+		fullSize()
+		background linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0.88) 70.1%, #FFFFFF 100%)
+		
+	&.--dark-mode
+		color $white-color
+		&:before
+			background linear-gradient(90deg, #222222 0%, rgba(34, 34, 34, 0.88) 70.1%, #222222 100%)
+			
+
+			
+	.container
+		position relative
+		z-index 2
+		
+	.title
+		font-size 45px
+		line-height 60px
+		margin-bottom 40px
+		max-width 600px
+		span
+			color $accent-color
+			
+
+.quiz-promo-block
+	//max-width 630px
+	padding 175px 0 115px
+	position relative
+	&__img
+		position absolute
+		bottom 0
+		right -150px
+		z-index -1
+		pointer-events none
+		width 1100px
+		// &:before
+		// 	pseudo()
+		// 	position absolute
+		// 	fullSize()
+		// 	background linear-gradient(211.13deg, rgba(255, 255, 255, 0.1) 24.53%, #FFFFFF 68.64%)
+		img
+			display block
+	&__text
+		font-size 16px
+		line-height 24px
+		margin-bottom 40px
+		
+	&__btn
+		.btn
+			position relative
+			&:before
+				pseudo()
+				pointer-events none
+				position absolute
+				top 100%
+				left -27px
+				margin-top -7px
+				width 44px
+				height 75px
+				background url('../img/quiz-btn-arrow.svg') 50% no-repeat / contain
+				transform rotate(12deg)
+		
+	&__offer
+		display flex
+		align-items center
+		font-size 14px
+		line-height 24px
+		margin-left -10px
+		margin-top 20px
+		p
+			max-width 330px
+			
+
+
+// Letters
+.letter
+	text-align center
+	height 100%
+	display flex
+	flex-direction column
+	&__wrapper
+		margin-bottom 30px
+	&__title
+		margin-top 10px
+	&__img
+		padding 10px
+		display flex
+		justify-content center
+		align-items flex-end
+		flex 1
+		img
+			@extends .content-img
