@@ -55,9 +55,11 @@
 			display block
 			width 19px
 			height 35px
-			fill $light-color
+			fill $accent-color !important
 			position absolute
 			position-center()
+			path
+				fill inherit !important
 		&:hover
 			background-color rgba($dark-color, 1)
 			
@@ -76,6 +78,7 @@
 				height 100%
 				fill #969696
 				transition fill .17s ease-in-out
+				
 			&:hover
 				svg
 					fill $accent-color
@@ -88,6 +91,8 @@
 				
 		&--transparent
 			background-color transparent
+			svg
+				fill $accent-color !important
 			&:hover
 				background-color rgba($dark-color, .15)
 			
