@@ -273,8 +273,8 @@ $(document).ready(function() {
 
 	if ($('.js-projects-slider').length > 0) {
 		var projectsSlider = new Swiper('.js-projects-slider', {
-			slidesPerView: 3,
-			slidesPerGroup: 3,
+			slidesPerView: "auto",
+			slidesPerGroup: 1,
 			speed: 500,
 			loop: true,
 			spaceBetween: 15,
@@ -287,16 +287,17 @@ $(document).ready(function() {
 				prevEl: '.js-projects-slider-btn-prev',
 				disabledClass: 'is-disabled'
 			},
-			// breakpoints: {
-			// 	620: {
-			// 		slidesPerView: 3,
-			// 		touchRatio: 0,
-			// 		autoplay: {
-			// 			delay: 4000,
-			// 			disableOnInteraction: false
-			// 		},
-			// 	}
-			// }
+			breakpoints: {
+				992: {
+					slidesPerView: 3,
+					slidesPerGroup: 3,
+					
+				},
+				620: {
+					slidesPerView: 2,
+					slidesPerGroup: 2,
+				}
+			}
 			
 		});
 
@@ -322,11 +323,11 @@ $(document).ready(function() {
 
 	if ($('.js-services-slider').length > 0) {
 		var servicesSlider = new Swiper('.js-services-slider', {
-			slidesPerView: 4,
+			slidesPerView: 2,
 			slidesPerGroup: 1,
 			speed: 500,
 			loop: true,
-			spaceBetween: 32,
+			spaceBetween: 16,
 			pagination: {
 				el: '.js-services-slider-pagination',
 				clickable: true
@@ -336,24 +337,62 @@ $(document).ready(function() {
 				prevEl: '.js-services-slider-btn-prev',
 				disabledClass: 'is-disabled'
 			},
-			// breakpoints: {
-			// 	620: {
-			// 		slidesPerView: 3,
-			// 		touchRatio: 0,
-			// 		autoplay: {
-			// 			delay: 4000,
-			// 			disableOnInteraction: false
-			// 		},
-			// 	}
-			// }
+			breakpoints: {
+				1100: {
+					slidesPerView: 4,
+					slidesPerGroup: 1,
+				},
+				900: {
+					slidesPerView: 3,
+					slidesPerGroup: 1,
+					spaceBetween: 32,
+				}
+			}
 			
 		});
+
+		
 
 
 
 
 	}
 
+
+	if ($('.js-thank-you-letters-slider').length > 0) {
+
+		var feedbacksSlider = new Swiper('.js-thank-you-letters-slider', {
+			slidesPerView: 'auto',
+			speed: 500,
+			loop: true,
+			pagination: {
+				el: '.js-thank-you-letters-slider-pagination',
+				clickable: true
+			},
+			spaceBetween: 0,
+			navigation: {
+				nextEl: '.js-thank-you-letters-slider-btn-next',
+				prevEl: '.js-thank-you-letters-slider-btn-prev',
+				disabledClass: 'is-disabled'
+			},
+			breakpoints: {
+				992: {
+					slidesPerView: 1,
+					
+				}
+			}
+
+			
+		});
+
+	}
+
+
+	$('.js-toggle-services-list-btn').on('click', function(e) {
+		e.preventDefault();
+		$(this).toggleClass('is-toggled');
+		$('.js-services-list .services-list__item').stop().slideToggle(200);
+	});
 	
 
 	// Fancy

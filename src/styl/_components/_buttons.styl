@@ -28,6 +28,10 @@
 		&-lg
 			padding-left 86.5px
 			padding-right 86.5px
+		&-tall
+			padding-top 24px
+			padding-bottom 24px
+			font-size 18px
 	&-sm
 		padding-top 11px
 		padding-bottom 11px
@@ -43,7 +47,7 @@
 		line-height 24px
 		
 	&-with-ic
-		display flex
+		display flex 
 		flex-wrap nowrap
 		align-items center
 		justify-content center
@@ -63,6 +67,7 @@
 		background-color transparent
 		border 1px solid $accent-color
 		color $accent-color
+		text-align center
 		&:hover
 			background-color $accent-color
 			color $white-color
@@ -77,6 +82,15 @@
 			&:hover
 				background-color $secondary-color
 				color $white-color
+				
+		
+				
+		&.btn-with-ic
+			svg
+				fill $secondary-color
+			&:hover
+				svg
+					fill $white-color
 			
 				
 	&-ghost
@@ -315,3 +329,12 @@
 			width 30px
 			height 14px
 			background url('../img/icons/svg/link-arrow.svg') no-repeat / contain
+			
+
+.btn-toggle-list
+	position relative
+	&:before
+		content attr(data-default-text)
+	&.is-toggled
+		&:before
+			content attr(data-toggled-text)

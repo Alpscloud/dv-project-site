@@ -25,6 +25,12 @@
 		width 100%
 		padding-right 0
 		
+		.marker-list
+			margin-top -18px
+			margin-bottom 32px
+			li
+				margin-bottom 16px
+		
 	.title
 		font 32px $Reg
 		line-height 42px
@@ -145,7 +151,7 @@
 .marker-list
 	li
 		display block
-		margin-bottom 32px
+		margin-bottom 16px
 		position relative
 		padding-left 24px
 		&:before
@@ -366,9 +372,11 @@
 		margin-top 8px
 		
 .about-us
+	
 	&__content
 		margin-left 130px
 		flex 1
+	
 		
 	&__video
 		display flex
@@ -380,6 +388,7 @@
 		font 14px $Reg
 		line-height 18px
 		color $secondary-light-text-color
+		padding-right 24px
 		&:hover
 			box-shadow 0px 4px 138px rgba(0, 0, 0, 0.1)
 		
@@ -473,6 +482,8 @@
 	z-index 1
 	top 16px
 	left 16px
+	right 16px
+
 	
 	ul
 		li
@@ -488,7 +499,7 @@
 			&:before
 				pseudo()
 				position absolute
-				vertical-center()
+				top 9px
 				left 8px
 				width 4px
 				height 4px
@@ -514,6 +525,8 @@
 	padding-bottom 8px
 	position relative
 	margin-bottom $gutter-bottom-sm
+
+		
 	.btn-arrow
 		position absolute
 		z-index 1
@@ -522,6 +535,7 @@
 			left -32px
 		&__next
 			right -32px
+			
 	.sect__title
 		padding-left 70px
 		padding-right 70px
@@ -533,6 +547,7 @@
 			padding-bottom 40px
 			align-items flex-start
 			justify-content space-between
+			flex-wrap nowrap !important
 		&__img
 			width 370px
 			&--thumbnail
@@ -603,6 +618,18 @@
 		.input
 			border-radius 8px
 			border-color $alternate-color-bg
+			&::-webkit-input-placeholder
+				font 14px $Reg
+				color transparent
+			&::-moz-placeholder
+				font 14px $Reg
+				color transparent
+			&:-moz-placeholder
+				font 14px $Reg
+				color transparent
+			&:-ms-input-placeholder
+				font 14px $Reg
+				color transparent
 			&__wrapper
 				margin-bottom 16px
 			&:hover,
@@ -683,6 +710,50 @@ a[href^="tel:"].page-contact-link
 			color inherit
 			&:hover
 				color $secondary-color
+				
+
+.services-list
+	margin-bottom 32px
+	
+.services-list__item
+	margin-bottom 16px
+	padding-bottom 16px
+	border-bottom 1px solid #E7E8E9
+	padding-left 14px
+	font 14px $Med
+	line-height 18.2px
+	text-align left
+	display none
+	&:nth-child(1),
+	&:nth-child(2),
+	&:nth-child(3),
+	&:nth-child(4),
+	&:nth-child(5),
+	&:nth-child(6),
+	&:nth-child(7),
+	&:nth-child(8),
+	&:nth-child(9)
+		display block !important
+	&:nth-child(9)
+		display block !important
+		padding-bottom 0
+		border-bottom none
+	&:nth-child(10)
+		padding-top 16px
+		margin-top 16px
+		border-top 1px solid #E7E8E9
+	&:last-child
+		margin-bottom 0
+		padding-bottom 0
+		border-bottom none
+	&-img
+		width 40px
+		height 40px
+		flex none
+		margin-right 36px
+		flex-col-center()
+		img
+			@extends .content-img
 				
 
 .services-slider-controls
@@ -779,12 +850,12 @@ a[href^="tel:"].page-contact-link
 	flex 1
 	max-width 570px
 	margin-left 32px
-	padding 32px 32px 16px 32px
+	padding 32px 32px 22px 32px
 	
 	.article-list
 		padding-bottom 16px
 		margin-bottom 16px
-		border-bottom 1px solid $border-block-color
+		border-bottom 1px solid #E7E8E9
 		&:last-child
 			margin-bottom 0
 	
@@ -808,6 +879,7 @@ a[href^="tel:"].page-contact-link
 			width 100%
 			height 100%
 			display block
+			border-radius 8px
 			
 .address
 	margin-bottom 28px !important
@@ -832,3 +904,117 @@ a[href^="tel:"].page-contact-link
 		margin-bottom 32px
 		&.sect__title
 			margin-bottom 16px
+			
+
+.kp-offer
+	margin-bottom 32px
+	
+.promo-advantages:last-child
+	margin-bottom 0
+	
+.services-description
+	margin-bottom 88px
+	&:last-child
+		margin-bottom 0
+	&__content
+		max-width 570px
+		margin-right 32px
+	
+	&__cards
+		flex 1
+		display flex
+		flex-wrap wrap
+		justify-content flex-start
+		margin-left -16px
+		margin-right -16px
+		margin-bottom -16px
+	&__card
+		padding-left 16px
+		padding-right 16px
+		margin-bottom 16px
+		display flex
+		flex-direction column
+		justify-content flex-end
+		img
+			display block
+			width auto
+			height auto
+			max-width 157px
+		
+		
+		&-title
+			border-radius 8px
+			background-color #E7E8E9
+			padding 8px
+			min-height 52px
+			font 14px $Med
+			line-height 18px
+			color $secondary-light-text-color
+			position relative
+			z-index 1
+			margin-top -10px
+		
+
+.free-engineer
+	position relative
+	max-width 570px
+	z-index 1
+	img
+		position absolute
+		max-width none
+		z-index -1
+		left 100%
+		margin-left -45px
+		vertical-center()
+		width 778px
+		
+	&__order
+		margin-top 84px
+		p
+			margin-bottom 32px
+			
+	.sect__title
+		max-width 500px
+		
+
+.our-experience
+	&-items
+		.row
+			margin-left -16px
+			margin-right -16px
+			margin-bottom -32px
+	&-item
+		width calc(100% / 6)
+		padding-left 16px
+		padding-right 16px
+		font-size 16px
+		margin-bottom 32px
+		&__img
+			border-radius 8px
+			margin-bottom 16px
+			padding-top 66.5%
+			
+
+.examination
+	margin-bottom 26px
+	&-logos
+		display flex
+		flex-wrap nowrap
+		flex 1
+		margin-left -8px
+		margin-right -8px
+	&-logo
+		width 33.3333%
+		padding-left 8px
+		padding-right 8px
+		img
+			display block
+			height 92px
+			width auto
+			margin-bottom 32px
+	
+	.block-description
+		margin-bottom 0
+		width 100%
+		max-width 570px
+		margin-right 32px
