@@ -50,6 +50,9 @@ $(document).ready(function() {
 	// ========= =========== =========== ===========
 
 
+	$('.main').css('padding-top', $('.header').outerHeight() - 2 + 'px');
+
+
 	$('.menu-item-has-children').each(function() {
 		var btn = '<button class="btn-toggle js-toggle-submenu-btn" type="button"></button>';
 		var link = $(this).find('> a');
@@ -224,7 +227,10 @@ $(document).ready(function() {
 		slidesPerView: 1,
 		speed: 500,
 		loop: true,
-		
+		pagination: {
+			el: '.js-feedbacks-slider-pagination',
+			clickable: true
+		},
 		spaceBetween: 0,
 		navigation: {
 			nextEl: '.js-feedbacks-slider-btn-next',
@@ -261,6 +267,91 @@ $(document).ready(function() {
 				swiper: projectSliderThumbs,
 			},
 		});
+	}
+
+
+
+	if ($('.js-projects-slider').length > 0) {
+		var projectsSlider = new Swiper('.js-projects-slider', {
+			slidesPerView: 3,
+			slidesPerGroup: 3,
+			speed: 500,
+			loop: true,
+			spaceBetween: 15,
+			pagination: {
+				el: '.js-projects-slider-pagination',
+				clickable: true
+			},
+			navigation: {
+				nextEl: '.js-projects-slider-btn-next',
+				prevEl: '.js-projects-slider-btn-prev',
+				disabledClass: 'is-disabled'
+			},
+			// breakpoints: {
+			// 	620: {
+			// 		slidesPerView: 3,
+			// 		touchRatio: 0,
+			// 		autoplay: {
+			// 			delay: 4000,
+			// 			disableOnInteraction: false
+			// 		},
+			// 	}
+			// }
+			
+		});
+
+
+		if ($('.js-project-slide-slider').length > 0) {
+
+			$('.js-project-slide-slider').each(function() {
+				var pagination = $(this).parents('.project-slide__slider').find('.js-project-slide-slider-pagination');
+
+				var projectSlideSlider = new Swiper($(this), {
+					slidesPerView: 1,
+					touchRatio: 0,
+					pagination: {
+						el: pagination,
+						clickable: true
+					},
+				});
+			});
+		}
+
+	}
+
+
+	if ($('.js-services-slider').length > 0) {
+		var servicesSlider = new Swiper('.js-services-slider', {
+			slidesPerView: 4,
+			slidesPerGroup: 1,
+			speed: 500,
+			loop: true,
+			spaceBetween: 32,
+			pagination: {
+				el: '.js-services-slider-pagination',
+				clickable: true
+			},
+			navigation: {
+				nextEl: '.js-services-slider-btn-next',
+				prevEl: '.js-services-slider-btn-prev',
+				disabledClass: 'is-disabled'
+			},
+			// breakpoints: {
+			// 	620: {
+			// 		slidesPerView: 3,
+			// 		touchRatio: 0,
+			// 		autoplay: {
+			// 			delay: 4000,
+			// 			disableOnInteraction: false
+			// 		},
+			// 	}
+			// }
+			
+		});
+
+
+
+
 	}
 
 	

@@ -1,0 +1,64 @@
+{% include '../parts/head.html' %}
+<body>
+
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content__wrapper">
+
+
+		<!-- Header -->
+		{% include '../parts/sections/blocks/header.html' %}
+		<!-- //Header -->
+
+		<!-- Main -->
+		<main class="main ">
+
+			<!-- Section promo -->
+			<section class="sect__promo sect__promo-about sect-decor white-color">
+
+				<!-- Breadcrumbs -->
+				<nav class="breadcrumbs breadcrumbs-light">
+					<div class="container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+							<li class="breadcrumbs__item"><span class="breadcrumbs__link is-active">О компании</span></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- //Breadcrumbs -->
+
+				<div class="container">
+					<div class="about-us text-center">
+						<h1 class="title">О компании DV-project</h1>
+						<p class="about-us__text">Проектирование и монтаж слаботочных систем в Москве и МО</p>
+
+						<div class="promo__video--wrapper">
+							<iframe src="https://www.youtube.com/embed/zD22D1ngWbE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+
+
+				</div>
+				<!-- //container -->
+			</section>
+			<!-- //Section promo -->
+
+			
+
+		</main>
+		<!-- //Main -->
+
+		<!-- Footer -->
+		{% include '../parts/sections/blocks/footer.html' %}
+		<!-- //Footer -->
+
+		{% include '../parts/components/popup.html' %}
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+	{% include '../parts/scripts.html' %}
+
+</body>
+
+</html>

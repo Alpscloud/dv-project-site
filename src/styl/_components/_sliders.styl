@@ -188,3 +188,44 @@
 		margin-top -60px
 	* 
 		box-sizing border-box
+		
+
+
+.rounded-slider-pagination
+	height 16px
+	.swiper-pagination-bullet
+		width 16px
+		height 16px
+		opacity 1
+		position relative
+		border none
+		outline none
+		background transparent
+		margin-right 8px
+		&:last-child
+			margin-right 0
+		&:before
+			pseudo()
+			position absolute
+			position-center()
+			width 8px
+			height 8px
+			border-radius 50%
+			background-color #E7E8E9
+			transition all .17s ease-in-out
+		
+		&-active
+			&:before
+				background-color $secondary-color
+				transform translate(-50%, -50%) scale(1.5, 1.5)
+				
+
+
+.slider-controls
+	display flex
+	flex-wrap nowrap
+	align-items center
+	
+	.rounded-slider-pagination
+		margin-left 46px
+		margin-right 46px

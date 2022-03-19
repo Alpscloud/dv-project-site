@@ -92,11 +92,17 @@ img
 
 .gutters
 	padding $gutters
+	&-sm
+		padding $gutters-sm
 .gutter
 	&-top
 		padding-top $gutter-top
+		&-sm
+			padding-top $gutter-top-sm
 	&-bottom
 		padding-bottom $gutter-bottom
+		&-sm
+			padding-bottom $gutter-bottom-sm
 	
 .w3c
 	visibility hidden
@@ -315,6 +321,30 @@ b, strong
 	h3
 		display none
 				
+
+
+.b-radius
+	border-radius 8px
 	
+.title-h3
+	font 18px $Med
+	line-height 23.4px
+	margin-bottom 16px
+	a
+		color inherit
+		&:hover
+			color $secondary-color
+	
+.block-bg
+	background-color $block-bg
+	
+.block-description
+	margin-bottom 32px
+	.sect__title
+		margin-bottom 16px !important
+		
+
+.hidden-desktop
+	display none !important
 
 // ========== ========== ========== ========== ========== ==========

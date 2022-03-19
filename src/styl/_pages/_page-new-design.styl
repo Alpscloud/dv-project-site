@@ -1,0 +1,834 @@
+.custom-page
+	font-size 18px
+	line-height 23.4px
+	.header
+		box-shadow 0px 4px 138px rgba(0, 0, 0, 0.1)
+		
+	.breadcrumbs
+		&__item
+			&:before
+				color $secondary-color
+		&__link
+			color $secondary-color
+			&.is-active
+				color $secondary-light-text-color
+				
+	.sect__promo
+		position relative
+		background-color transparent
+		padding-top 30px
+		padding-bottom 40px
+		min-height auto
+		
+	.promo__content
+		max-width 570px
+		width 100%
+		padding-right 0
+		
+	.title
+		font 32px $Reg
+		line-height 42px
+		margin-bottom 50px
+		
+
+	.marquiz__button
+		display inline-block
+		width 100%
+		padding 24px 15px
+		background-color $secondary-color
+		border none
+		border-radius 8px
+		font 18px $Med
+		color $white-color
+		box-shadow none
+		text-transform uppercase
+		border 1px solid $secondary-color
+		&:hover
+			color $secondary-color !important
+			background-color transparent
+		
+	.sect__title
+		font 32px $Reg
+		line-height 42px
+		margin-bottom 32px
+		span
+			color $secondary-color
+		
+
+	.faq__item
+		margin-bottom 32px
+		box-shadow none
+		&.is-toggled
+			box-shadow 0px 15px 15px rgba(0, 0, 0, 0.05)
+			.faq__btn
+				transform rotate(-180deg)
+				&:before
+					background-color transparent
+			.faq__item--title
+				color $text-color
+		&:last-child
+			margin-bottom 0
+		&--header
+			padding 18px 32px
+			border-radius 8px
+		&--body
+			padding 0 32px 32px
+		&--title
+			font 18px $Med
+			
+	.faq__btn
+		&:after
+			display none
+		&:before
+			width 23px
+			height 13px
+			background-color transparent
+			background url('../img/icons/svg/toggle-arrow.svg') 50% no-repeat / contain
+				
+
+
+.sect__promo-bg
+	position absolute
+	left 0
+	top 0
+	height 100%
+	width 945px
+	background-position 50% 50%
+	background-repeat no-repeat
+	background-size cover
+	z-index -1
+
+	&:before
+		pseudo()
+		position absolute
+		top 0
+		width 100%
+		height 100%
+		background linear-gradient(90deg, #ffffff 12%, rgba(196, 196, 196, 0) 88.43%)
+		transform scaleX(-1)
+		right -2px
+		
+.quiz-offer
+	&__label
+		max-width 470px
+		margin-bottom 16px
+		font 18px $Med
+		line-height 23px
+	&__notice
+		position relative
+		color $secondary-light-text-color
+		font 14px $Reg
+		margin-top 16px
+		padding-left 20px
+		background url('../img/icons/svg/clock.svg') left center no-repeat / 12px 12px
+		
+
+.promo-advantages
+	display flex
+	flex-wrap nowrap
+	margin-bottom 56px
+	margin-left -10px
+	margin-right -10px
+	
+.promo-advantage
+	font 18px $Reg
+	color $secondary-light-text-color
+	line-height 23px
+	padding-left 10px
+	padding-right 10px
+	p
+		max-width 270px
+	.ic-block
+		margin-bottom 18px
+		
+
+.marker-list
+	li
+		display block
+		margin-bottom 32px
+		position relative
+		padding-left 24px
+		&:before
+			pseudo()
+			width 8px
+			height 8px
+			position absolute
+			top 7px
+			left 0
+			background-color $secondary-color
+			border-radius 50%
+		&:last-child
+			margin-bottom 0
+
+.border-block
+	border-bottom 1px solid $border-block-color
+	padding-bottom $gutter-bottom-sm
+	margin-bottom $gutter-bottom-sm
+	&:last-child
+		padding-bottom 0
+		margin-bottom 0
+		border-bottom none
+		
+// Handling
+.services-handling
+	margin-bottom -30px
+	
+.service-handling
+	background-color $white-color
+	min-height 250px
+	height 100%
+	padding 25px
+	&__title
+		font 14px $Med
+		line-height 18px
+	div
+		display flex
+		align-items center
+		width 140px
+		height 115px
+		margin-bottom 12px
+		img
+			@extends .content-img
+			margin 0
+	&__wrapper
+		margin-bottom 30px
+		
+
+// Fines
+.fines
+	&-description
+		flex 1
+		margin-right 30px
+		position relative
+		padding-left 100px
+		img
+			display block
+			width 67px
+			position absolute
+			top 0
+			left 0
+		&__row
+			margin-bottom 110px
+			
+	&-attention
+		flex none
+		width 470px
+		position relative
+		padding 160px 70px 36px 30px
+		
+		font-size 16px
+		line-height 20.8px
+		img
+			display block
+			position absolute
+			width 316px
+			top -35px
+			right 0
+			pointer-events none
+			
+	&-solutions
+		&__block
+			padding 63px 68px 115px 68px
+		&__row
+			margin-left -10px
+			margin-right -10px
+			
+	&-solution
+
+		height 100%
+		.ic-block
+			width 60px
+			height 60px
+			margin-bottom 16px
+
+
+
+		&__wrapper
+			margin-bottom 30px
+			padding-left 10px
+			padding-right 10px
+			
+
+.technical-support
+	background-color $white-color
+	padding 65px 100px 65px 330px
+	position relative
+	z-index 1
+	max-width 1030px
+	margin -115px auto 0
+	
+	
+	img
+		display block
+		width 461px
+		position absolute
+		top 50%
+		transform translateY(-135px)
+		left -51px
+		pointer-events none
+		
+.pay-fines
+	position relative
+	padding-left 500px
+	display flex
+	justify-content flex-end
+	&__offer
+		max-width 670px
+		.block-description
+			margin-bottom 72px
+			
+		&-guaranties
+			position relative
+			margin-bottom 32px
+			padding 16px 42px 16px 178px
+			font-size 16px
+			line-height 19px
+			.title-h3
+				margin-bottom 8px
+			img
+				display block
+				width 178px
+				position absolute
+				bottom 0
+				left 0
+		
+		
+	&__img
+		flex none
+		position absolute
+		left -115px
+		vertical-center()
+		width 600px
+		img
+			display block
+			width 100%
+			
+
+
+.ic-block
+	display block
+	background-repeat no-repeat
+	background-size contain
+	background-position 50% 50%
+	width 40px
+	height 40px
+	margin-bottom 8px
+	
+.headache
+	&-items
+		margin-bottom -30px
+	&-img
+		width 670px
+		flex none
+		img
+			display block
+	&-content
+		flex 1 0 620px
+	&-item
+		font-size 16px
+		line-height 21px
+		&__wrapper
+			margin-bottom 30px
+			
+
+.offer
+	position relative
+	padding 63px 60px 63px 500px
+	margin-bottom 80px
+	img
+		display block
+		position absolute
+		width 486px
+		vertical-center()
+		left 0
+		pointer-events none
+		
+
+.our-licenses
+	width 470px
+	flex none
+	position relative
+	z-index 1
+	img
+		display block
+		position absolute
+		width 560px
+		max-width none
+		horisontal-center()
+		margin-left -30px
+		z-index -1
+		bottom 74px
+	&__info
+		padding 30px
+	&__number
+		color $secondary-color
+		font-family $Bold
+		margin-top 8px
+		
+.about-us
+	&__content
+		margin-left 130px
+		flex 1
+		
+	&__video
+		display flex
+		flex-wrap nowrap
+		height 160px
+		border-radius 8px
+		overflow hidden
+		background-color $white-color
+		font 14px $Reg
+		line-height 18px
+		color $secondary-light-text-color
+		&:hover
+			box-shadow 0px 4px 138px rgba(0, 0, 0, 0.1)
+		
+		&-img
+			display block
+			width 270px
+			position relative
+			flex none
+			img
+				display block
+				height 100%
+				width 100%
+				object-fit cover
+		&-btn
+			display inline-block
+			width 67px
+			height 67px
+			border-radius 50%
+			border 6.5px solid $white-color
+			background-color $secondary-color
+			position absolute
+			vertical-center()
+			z-index 1
+			right -33.5px
+			svg
+				display block
+				width 17px
+				fill $white-color
+				position absolute
+				position-center()
+		&-text
+			display flex
+			align-items center
+			flex 1
+			padding-left 65px
+			
+.about-us
+	&__parametrs
+		display flex
+		flex-wrap wrap
+		justify-content flex-start
+		margin-left -5px
+		margin-right -5px
+	&__parametr
+		width 50%
+		display flex
+		align-items center
+		flex-wrap nowrap
+		justify-content flex-start
+		margin-bottom 40px
+		padding-left 5px
+		padding-right 5px
+		&-value
+			color $secondary-light-text-color
+			font 72px $Black
+			line-height 1
+			margin-right 30px
+			
+
+// Project slider
+.project-slide
+	border-radius 8px
+	overflow hidden
+	&__slider
+		position relative
+		margin-bottom 32px
+		.rounded-slider-pagination
+			position absolute
+			horisontal-center()
+			z-index 1
+			bottom 16px
+			
+		.thumbnail
+			padding-top 135%
+			border-radius 8px
+			display block
+			
+	.title-h3
+		margin-bottom 8px
+		a
+			color inherit
+			&:hover
+				color $secondary-color
+				
+	&__preview
+		font 16px $Reg
+		line-height 19px
+			
+.project-tags
+	position absolute
+	z-index 1
+	top 16px
+	left 16px
+	
+	ul
+		li
+			display block
+			position relative
+			width fit-content
+			background-color $white-color
+			border-radius 8px
+			font 12px $Reg
+			color $secondary-light-text-color
+			margin-bottom 4px
+			padding 4px 8px 4px 16px
+			&:before
+				pseudo()
+				position absolute
+				vertical-center()
+				left 8px
+				width 4px
+				height 4px
+				border-radius 50%
+				background-color $secondary-color
+			&:last-child
+				margin-bottom 0
+				
+
+.projects-slider-controls
+	margin-top 82px
+	position relative
+	display flex
+	justify-content center
+	.btn-transparent
+		position absolute
+		right 0
+		vertical-center()
+		
+.thank-you-letters
+	background-color $white-color
+	padding-top 64px
+	padding-bottom 8px
+	position relative
+	margin-bottom $gutter-bottom-sm
+	.btn-arrow
+		position absolute
+		z-index 1
+		vertical-center()
+		&__prev
+			left -32px
+		&__next
+			right -32px
+	.sect__title
+		padding-left 70px
+		padding-right 70px
+		
+	.feedback
+		&__slide
+			padding-left 70px
+			padding-right 70px
+			padding-bottom 40px
+			align-items flex-start
+			justify-content space-between
+		&__img
+			width 370px
+			&--thumbnail
+				box-shadow 0px 15px 25px rgba(0, 0, 0, 0.05)
+		
+		&__content
+			max-width 470px
+			padding-left 0
+			margin-left 25px
+			
+		&__text
+			font 16px $Reg
+			line-height 21px
+			
+
+.thank-you-letters__slider-pagination
+	padding-left 70px
+	padding-right 70px
+	transform translateY(-56px)
+	position relative
+	z-index 1
+	pointer-events none
+	
+	.rounded-slider-pagination
+		pointer-events auto
+		max-width 470px
+		margin-left auto
+		margin-right 0
+
+
+
+.form-block
+	padding 64px
+	overflow hidden
+	&__content
+		flex 1
+		margin-right 68px
+		position relative
+		img
+			display block
+			position absolute
+			width 558px
+			bottom -64px
+			z-index 1
+			pointer-events none
+			right -160px
+		.sect__title
+			margin-bottom 16px
+		&-text
+			font-family $Med
+			padding-bottom 32px
+			margin-bottom 32px
+			border-bottom 1px solid $secondary-light-text-color
+	&__form
+		background-color $white-color
+		padding 32px 64px
+		flex 1
+		width 100%
+		max-width 500px
+		box-shadow 0px 15px 15px rgba(0, 0, 0, 0.05)
+		
+		.form__block--title
+			text-align left
+			color $secondary-color
+			font-family $Med
+			margin-bottom 16px
+			
+		.input
+			border-radius 8px
+			border-color $alternate-color-bg
+			&__wrapper
+				margin-bottom 16px
+			&:hover,
+			&:focus
+				border-color $secondary-color
+			&__label
+				span
+					padding-left 16px
+					font-size 12px
+					color $secondary-light-text-color
+					
+		button[type=submit]
+			margin-top 16px
+					
+
+.form-notice
+	margin-top 19px
+	font 12px $Reg
+	line-height 15.6px
+	color $secondary-light-text-color
+	
+
+.consultation
+	&-text
+		max-width 263px
+		margin-bottom 16px
+		
+		
+.page-contact-link
+	color $text-color
+	font 24px $Reg
+	&:hover
+		color $secondary-color
+		
+a[href^="tel:"].page-contact-link
+	font-family $Bold
+	
+.services-slider
+	position relative
+	.swiper-wrapper
+		align-items stretch
+	.swiper-slide
+		height auto
+		display flex
+		
+	.btn-arrow
+		position absolute
+		vertical-center()
+		z-index 1
+		&__prev
+			left -32px
+		&__next
+			right -32px
+		
+
+.service-slide
+	flex 1
+	background-color $white-color
+	padding 23px 38px 32px 38px
+	display flex
+	flex-direction column
+	
+	&__img
+		height 152px
+		margin-bottom 12px
+		img
+			@extends .content-img
+			margin 0
+			
+	div
+		flex none
+			
+	.title-h3
+		flex 1
+		font-size 14px
+		line-height 18.2px
+		a
+			color inherit
+			&:hover
+				color $secondary-color
+				
+
+.services-slider-controls
+	display flex
+	flex-wrap nowrap
+	justify-content space-between
+	align-items center
+	margin-top 32px
+	
+	.btn-secondary
+		width 100%
+		max-width 268px
+		
+.description.row
+	margin-left -76px
+	margin-right -76px
+	
+.description-col
+	padding-left 76px
+	padding-right 76px
+	
+.description-block
+	padding-bottom 32px
+	margin-bottom 32px
+	border-bottom 1px solid $border-block-color
+	&:last-child
+		padding-bottom 0
+		margin-bottom 0
+		border-bottom none
+		
+.description-total
+	padding-top 32px
+	margin-top 32px
+	border-top 1px solid $border-block-color
+	
+.description
+	font-size 16px
+	line-height 20.8px
+	h2,h3
+		font 18px $Med
+		line-height 23px
+		margin-bottom 16px
+		
+	p
+		margin-bottom 32px
+		&:last-child
+			margin-bottom 0
+			
+	p	+ h2,
+	p + h3
+		margin-top 62px
+		
+.sect__blog
+	padding-bottom 112px
+	
+.blog-link
+	margin-top 103px
+	
+
+	
+.article-card
+	.thumbnail
+		display block
+		border-radius 8px
+		padding-top 75%
+		margin-bottom 16px
+		
+	&__preview
+		margin-bottom 16px
+		font-size 16px
+		line-height 21px
+		&:last-child
+			margin-bottom 0
+	&__wrapper
+		margin-bottom 32px
+		padding-left 16px
+		padding-right 16px
+		
+.articles-cards__row
+	margin-bottom -32px
+	margin-left -16px
+	margin-right -16px
+	flex 1
+	
+		
+.article-date
+	margin-bottom 8px
+	font 16px $Med
+	color $secondary-light-text-color
+	
+.articles-list
+	background-color $white-color
+	width 100%
+	flex 1
+	max-width 570px
+	margin-left 32px
+	padding 32px 32px 16px 32px
+	
+	.article-list
+		padding-bottom 16px
+		margin-bottom 16px
+		border-bottom 1px solid $border-block-color
+		&:last-child
+			margin-bottom 0
+	
+.sect__map
+	padding-bottom 112px
+	
+.map__row
+	.map__wrapper
+		position relative
+		top auto
+		left auto
+		transform none
+		right auto
+		bottom auto
+		flex 1
+		width 100%
+		max-width 570px
+		height 532px
+		margin-left 36px
+		iframe
+			width 100%
+			height 100%
+			display block
+			
+.address
+	margin-bottom 28px !important
+	
+.contacts-information
+	
+	p
+		margin-bottom 16px
+		
+.contacts-btns
+	margin-top 64px
+	
+	.btn-transparent
+		margin-left 32px
+		&:first-child
+			margin-left 0
+			
+
+.whatsapp-block
+	margin-bottom 64px
+	p
+		margin-bottom 32px
+		&.sect__title
+			margin-bottom 16px
