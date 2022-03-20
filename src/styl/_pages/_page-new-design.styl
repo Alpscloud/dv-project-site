@@ -1,8 +1,30 @@
 .custom-page
 	font-size 18px
 	line-height 23.4px
-	.header
+	.header__bottom
 		box-shadow 0px 4px 138px rgba(0, 0, 0, 0.1)
+		
+	.logo
+		&:hover
+			color $secondary-color
+		
+
+	.phone-link:before, 
+	.roistat-phone:before
+		background-image url('../img/icons/svg/phone-green.svg')
+		
+	.phone-link, 
+	.roistat-phone
+		&:hover
+			color $secondary-color
+		
+	.sub-menu li:hover a
+		background-color $secondary-color
+		color $white-color !important
+		
+	.mail-link:hover, 
+	.nav li:hover > a
+		color $secondary-color
 		
 	.breadcrumbs
 		&__item
@@ -50,8 +72,11 @@
 		text-transform uppercase
 		border 1px solid $secondary-color
 		&:hover
-			color $secondary-color !important
-			background-color transparent
+			background-color lighten($secondary-color, 7%)
+			border-color lighten($secondary-color, 7%)
+			
+	.marquiz__button_blicked:after
+		animation-duration 2s
 		
 	.sect__title
 		font 32px $Reg
@@ -90,6 +115,21 @@
 			height 13px
 			background-color transparent
 			background url('../img/icons/svg/toggle-arrow.svg') 50% no-repeat / contain
+			
+
+	.footer__menu a
+		color $secondary-color
+		
+	.block-with-ic__address--accent:before
+		background-image url('../img/icons/svg/address-green.svg')
+	.block-with-ic__worktime--accent:before
+		background-image url('../img/icons/svg/worktime-green.svg')
+	
+	.contacts__link
+		&:hover
+			color $secondary-color
+		&--ic svg
+			fill $secondary-color
 				
 
 
@@ -617,19 +657,19 @@
 			
 		.input
 			border-radius 8px
-			border-color $alternate-color-bg
+			border-color $secondary-light-text-color
 			&::-webkit-input-placeholder
 				font 14px $Reg
-				color transparent
+				color $border-color
 			&::-moz-placeholder
 				font 14px $Reg
-				color transparent
+				color $border-color
 			&:-moz-placeholder
 				font 14px $Reg
-				color transparent
+				color $border-color
 			&:-ms-input-placeholder
 				font 14px $Reg
-				color transparent
+				color $border-color
 			&__wrapper
 				margin-bottom 16px
 			&:hover,
@@ -815,6 +855,15 @@ a[href^="tel:"].page-contact-link
 
 	
 .article-card
+	display block
+	&:hover
+		.btn-permalink
+			background-color $secondary-color
+			border-color $secondary-color
+			color $white-color
+		.title-h3
+			color $secondary-color
+			
 	.thumbnail
 		display block
 		border-radius 8px
@@ -825,12 +874,17 @@ a[href^="tel:"].page-contact-link
 		margin-bottom 16px
 		font-size 16px
 		line-height 21px
+		color $text-color
 		&:last-child
 			margin-bottom 0
 	&__wrapper
 		margin-bottom 32px
 		padding-left 16px
 		padding-right 16px
+		
+	.title-h3
+		transition color .17s ease-in-out
+		color $text-color
 		
 .articles-cards__row
 	margin-bottom -32px

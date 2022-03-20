@@ -23,8 +23,8 @@
 		color $white-color
 		border 1px solid $secondary-color
 		&:hover
-			color $secondary-color
-			background-color transparent
+			background-color lighten($secondary-color, 7%)
+			border-color lighten($secondary-color, 7%)
 		&-lg
 			padding-left 86.5px
 			padding-right 86.5px
@@ -116,6 +116,7 @@
 		padding 8px 16px
 		text-transform uppercase
 		font 12px $Reg
+		transition all .17s ease-in-out
 		&:hover
 			background-color $secondary-color
 			border-color $secondary-color

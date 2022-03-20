@@ -50,7 +50,20 @@ $(document).ready(function() {
 	// ========= =========== =========== ===========
 
 
-	$('.main').css('padding-top', $('.header').outerHeight() - 2 + 'px');
+	var headerOffset = $('.header__bottom').offset().top;
+
+	$(window).on('scroll', function() {
+		if ($(this).scrollTop() > headerOffset) {
+			$('.header__bottom').addClass('is-fixed');
+			$('.header').css('padding-bottom', $('.header__bottom').outerHeight() + 'px');
+		} else {
+			$('.header__bottom').removeClass('is-fixed');
+			$('.header').css('padding-bottom', '0px');
+		}
+	});
+
+
+	
 
 
 	$('.menu-item-has-children').each(function() {
