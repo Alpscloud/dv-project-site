@@ -159,7 +159,34 @@
 	.hidden-tablet
 		display none !important
 		
++max-screen(1000px)
+	.custom-page
+		
+		.header__contacts
+			height 50px
+			padding-bottom 5px
+			.phone-link
+				font-size 16px
+				
+			.whatsapp-link
+				display inline-block
+				line-height 1
+			.mail-link
+				display none
+				
+		.logo
+			img
+				height 50px
+				width 45px
+				
+		.header__bottom
+			height 50px
+			
 
+			
+		.btn__hamburger
+			width 50px
+			height 50px
 +max-screen(992px)
 	.pay-fines
 		padding-left 0
@@ -332,6 +359,15 @@
 			margin-right 32px
 			flex none
 			
+	.popup-text
+		.popup__body
+			padding 16px
+			
+		.content
+			h2
+				font-sze 26px
+				line-height 30px
+			
 
 +max-screen(620px)
 	
@@ -345,17 +381,18 @@
 		
 	.sect__promo-bg
 		height 150px
+		background-position bottom -10px center
 		&:before
 			background linear-gradient(360deg, #ffffff 15%, rgba(196, 196, 196, 0) 87.3%)
 	
 	.custom-page
-		font-size 14px
-		line-height 18.2px
+		font-size 15px
+		line-height 18.8px
 		.breadcrumbs
 			display none
 			
 		.sect__promo
-			padding-top 168px
+			padding-top 140px
 			min-height auto
 			padding-bottom 34px
 			
@@ -366,12 +403,16 @@
 		.title
 			font-size 24px
 			line-height 31.2px
-			margin-bottom 32px
+			margin-bottom 22px
 			
 		.marquiz__button
 			font-size 14px
 			padding-top 16px
 			padding-bottom 16px
+			
+		.promo__content 
+			.marker-list
+				margin-top -8px
 			
 		.promo__content
 			margin-bottom 0
@@ -383,10 +424,12 @@
 		padding-top 32px
 	.gutter-bottom-sm
 		padding-bottom 32px
+		
+
 			
 	.promo-advantages
 		flex-wrap wrap
-		margin-bottom 103px
+		margin-bottom 32px
 		
 	.promo-advantage
 		width 100%
@@ -414,7 +457,7 @@
 	.services-handling__img
 		margin-bottom 25px
 		width auto
-		max-width 100%
+		max-width 80%
 		
 	.services-handling
 		margin-bottom 0
@@ -648,24 +691,22 @@
 		padding 24px 16px
 		overflow visible
 		.sect__title
-			font-size 18px
-			line-height 23.4px
+			font-size 22px
+			line-height 32px
 			margin-bottom 8px
 		.block-description
 			margin-bottom 32px
+			font-size 18px
+			line-height 24px
 			
 		&__form
 			padding 16px
 		.form__block--title
-			font-size 14px
-			line-height 18.2px
+			font-size 20px
+			line-height 24px
 			margin-bottom 16px
 			
-		.input
-			
-			&__label
-				span
-					display none
+	
 					
 		&__content
 			z-index 1
@@ -821,6 +862,100 @@
 		padding-top 16px
 		padding-bottom 16px
 		font-size 14px
+		
+
+	.services-slider
+		padding-left 0
+		padding-right 0
+		.swiper-wrapper,
+		.swiper-container
+			overflow visible !important
+			transform none !important
+			width 100% !important
+		
+		.swiper-wrapper
+			flex-wrap wrap
+			
+		.btn-arrow
+			display none
+		
+		.swiper-slide
+			height auto
+			width 100% !important
+			margin-right 0 !important
+			margin-bottom 16px
+			padding-bottom 16px
+			border-bottom 1px solid #E7E8E9
+			&:last-child
+				margin-bottom 0
+				padding-bottom 0
+				border-bottom 0
+			
+		// .swiper-slide
+		// 	width 100% !important
+			
+		&-controls
+			.rounded-slider-pagination
+				display none
+				
+			.btn-secondary
+				max-width 100%
+				
+	.service-slide
+		width 100%
+		padding 0 0 0 14px
+		font 14px $Med
+		line-height 18.2px
+		text-align left
+		height auto
+		background-color transparent
+		border-radius 0
+		display flex
+		align-items center
+		justify-content flex-start
+		flex-wrap nowrap
+		flex none
+		flex-direction row
+		&__img
+			width 40px
+			height 40px
+			flex none
+			margin-right 36px
+			margin-bottom 0
+			flex-col-center()
+			img
+				@extends .content-img
+		.title-h3
+			margin-bottom 0
+		&:last-child
+			padding-bottom 0
+			margin-bottom 0
+			border-bottom none
+		
+		.btn-ghost
+			display none
+			
+
+	.pay-fines__offer-guaranties_sm
+		min-height auto
+		margin-bottom 16px
+		
+	.custom-page
+		.popup .btn__close svg
+			fill $white-color
+			width 9px
+			height 9px
+			
+		.popup__content
+			padding 32px 16px 24px
+			
+		.form__block
+			padding 0 !important
+			
+		.popup__title
+			font-size 20px
+			line-height 26px
+			
 
 	
 

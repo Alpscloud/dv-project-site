@@ -22,6 +22,21 @@
 		text-transform uppercase
 		color $white-color
 		border 1px solid $secondary-color
+		overflow hidden
+		position relative
+		&:after
+			pseudo()
+			position absolute
+			top -50%
+			bottom -50%
+			background linear-gradient(90deg,rgba(255,255,255,0.1),rgba(255,255,255,0.6) 100%)
+			width 45px
+			transform skewX(-22deg)
+			left -65%
+			animation-name blick
+			animation-duration 2s
+			animation-iteration-count infinite
+			
 		&:hover
 			background-color lighten($secondary-color, 7%)
 			border-color lighten($secondary-color, 7%)

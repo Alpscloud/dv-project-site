@@ -14,7 +14,7 @@
 		})(window, document, 'script', {
 			host: '//quiz.marquiz.ru',
 			region: 'eu',
-			id: '622f01dd8d11e7003f394866',
+			id: '60ab296e622915003eda5c6f',
 			autoOpen: false,
 			autoOpenFreq: 'once',
 			openOnExit: false,
@@ -23,6 +23,7 @@
 		);
 	</script>
 	<!-- Marquiz script end -->
+
 
 
 	
@@ -69,9 +70,13 @@
 								<div class="kp-offer">
 									<p class="quiz-offer__label">Оставьте заявку и получите коммерческое предложение на монтаж пожарной сигнализации</p>
 
-									<button class="btn-secondary btn-secondary-tall btn-wide" type="button">Получить коммерческое предложение</button>
+
+
+									<button class="btn-secondary btn-secondary-tall btn-wide js-open-consultation-popup-btn" type="button">Получить коммерческое предложение</button>
 
 								</div>
+
+								<p class="promo-advantages__label">Вы получите:</p>
 
 								<div class="promo-advantages">
 									<div class="promo-advantage">
@@ -161,7 +166,7 @@
 								<ul class="marker-list">
 									<li>Разработаем исполнительную документацию</li>
 									<li>Проведём обучение сотрудников</li>
-									<li>Предоставим приказы / инструкции, которые нужны вам для обеспечения безопасности и прохождения проверок</li>
+									<li>Предоставим приказы и инструкции, которые нужны вам для обеспечения безопасности и прохождения проверок</li>
 									<li>Проведём пожарный аудит объекта для оценки рисков и нарушений</li>
 									<li>Выполним расчёт категорирования помещений</li>
 								</ul>
@@ -182,21 +187,22 @@
 							</div>
 							<div class="pay-fines__offer">
 								<div class="block-description">
-									<h2 class="sect__title">Оплатим штрафы от МЧС из своего кармана</h2>
+									<h2 class="sect__title">Оплатим штрафы от МЧС<br> из своего кармана</h2>
 									<p>Если вам выпишут штраф за нашу работу, то мы оплатим его сами</p>
 								</div>
 
-								<div class="pay-fines__offer-guaranties b-radius block-bg">
+								<div class="pay-fines__offer-guaranties pay-fines__offer-guaranties_sm b-radius block-bg">
 									<img src="img/new/4.png" alt="">
-									<h3 class="title-h3">Гарантии прописаны в договоре</h3>
-									<p>Оставьте заявку и получите коммерческое предложение на техническое обслуживание систем</p>
+									<h3 class="title-h3">Гарантии прописаны<br> в договоре</h3>
+									
 								</div>
 
 								<div class="quiz-offer">
-									<div data-marquiz-id="622f01dd8d11e7003f394866"></div>
-									<script>(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Button', {id: '622f01dd8d11e7003f394866', buttonText: 'Получить коммерческое предложение', bgColor: '#f83a4b', textColor: '#fff', rounded: true, shadow: 'rgba(248, 58, 75, 0.5)', blicked: true})</script>
+									<p class="quiz-offer__label">Оставьте заявку и получите коммерческое предложение на техническое обслуживание систем</p>
 
-									<p class="quiz-offer__notice">Опрос занимает 1 минуту</p>
+									<button class="btn-secondary btn-wide js-open-consultation-popup-btn" type="button">Получить коммерческое предложение</button>
+
+								
 
 
 								</div>
@@ -219,7 +225,7 @@
 
 								<div class="free-engineer__order">
 									<p>Оставьте заявку для оформления бесплатного<br> выезда на осмотр</p>
-									<button class="btn-secondary btn-secondary-tall btn-wide" type="button">Оформить бесплатный выезд</button>
+									<button class="btn-secondary btn-secondary-tall btn-wide js-open-engineer-popup-btn" type="button">Оформить бесплатный выезд</button>
 								</div>
 							</div>
 							
@@ -386,8 +392,7 @@
 							<p>Ответьте на 7 простых вопросов и получите предложение</p>
 						</div>
 						<div class="quiz-offer">
-							<div data-marquiz-id="622f01dd8d11e7003f394866"></div>
-							<script>(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Button', {id: '622f01dd8d11e7003f394866', buttonText: 'Получить коммерческое предложение', bgColor: '#f83a4b', textColor: '#fff', rounded: true, shadow: 'rgba(248, 58, 75, 0.5)', blicked: true})</script>
+							<button class="btn-secondary btn-secondary-tall btn-wide" type="button" onclick="Marquiz.showModal('60ab296e622915003eda5c6f')">Получить коммерческое предложение</button>
 
 							<p class="quiz-offer__notice">Опрос занимает 1 минуту</p>
 						</div>
@@ -478,7 +483,11 @@
 		{% include '../parts/sections/blocks/footer.html' %}
 		<!-- //Footer -->
 
-		{% include '../parts/components/popup.html' %}
+		{% include '../parts/components/popup-new.html' %}
+
+		<!-- Popup privacy-->
+		{% include '../parts/components/popup-privacy.html' %}
+		<!-- //Popup privacy-->
 
 	</div>
 	<!-- //CONTENT WRAPPER -->
