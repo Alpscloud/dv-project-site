@@ -1139,16 +1139,17 @@ a[href^="tel:"].page-contact-link
 	display inline-block
 	position relative
 	padding-left 25px
-	color $text-color
+	color $secondary-color
 	margin-top 5px
+	font 12px $Reg
 	&:before
 		pseudo()
 		position absolute
 		vertical-center()
 		left 0
-		width 17px
-		height 17px
-		background url('../img/icons/svg/whatsapp.svg') 50% no-repeat / contain
+		width 16px
+		height 16px
+		background url('../img/icons/svg/whatsapp-stroke.svg') 50% no-repeat / contain
 		
 
 .custom-page
@@ -1162,6 +1163,31 @@ a[href^="tel:"].page-contact-link
 			fill-opacity 1
 			width 12px
 			height 12px
+			
+	.btn__hamburger
+		background-color $secondary-color
+		width 32px
+		height 32px
+		border-radius 4px
+		vertical-center()
+		right 15px
+		&--line
+			border-radius 20px
+			width 16px
+			margin 3px auto
+		&.is-active
+			span
+				&:nth-child(1)
+					transform translateY(5px) rotate(-45deg)
+				&:nth-child(3)
+					transform translateY(-5px) rotate(45deg)
+	.mobile-phone 
+		text-align left
+		.phone-link
+			padding-left 0
+			font 16px $Med
+			&:before
+				display none
 			
 	.popup
 		text-align left
@@ -1235,5 +1261,6 @@ a[href^="tel:"].page-contact-link
 		.form__block
 			max-width 380px
 			
-
-			
+.fancybox-slide--image .fancybox-close-small
+	right -10px
+	top -40px

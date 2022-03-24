@@ -162,8 +162,11 @@
 +max-screen(1000px)
 	.custom-page
 		
+		.header__row
+			padding-right 48px
+		
 		.header__contacts
-			height 50px
+			
 			padding-bottom 5px
 			.phone-link
 				font-size 16px
@@ -174,19 +177,10 @@
 			.mail-link
 				display none
 				
-		.logo
-			img
-				height 50px
-				width 45px
-				
-		.header__bottom
-			height 50px
+	
 			
 
-			
-		.btn__hamburger
-			width 50px
-			height 50px
+	
 +max-screen(992px)
 	.pay-fines
 		padding-left 0
@@ -401,9 +395,9 @@
 			line-height 31.2px
 			
 		.title
-			font-size 24px
+			font-size 22px
 			line-height 31.2px
-			margin-bottom 22px
+			margin-bottom 16px
 			
 		.marquiz__button
 			font-size 14px
@@ -498,7 +492,7 @@
 
 	.fines-attention
 		padding 32px
-		font-size 14px
+		font-size 15px
 		line-height 18.2px
 		img
 			width 164px
@@ -886,6 +880,13 @@
 			margin-bottom 16px
 			padding-bottom 16px
 			border-bottom 1px solid #E7E8E9
+			display none !important
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5)
+				display block !important
 			&:last-child
 				margin-bottom 0
 				padding-bottom 0
@@ -937,8 +938,20 @@
 			
 
 	.pay-fines__offer-guaranties_sm
-		min-height auto
+		background-color #fff
 		margin-bottom 16px
+		background-color #e7e8e9
+		padding-left 80px
+		margin-top 40px
+		img
+			display block
+			width 100px
+			left -10px
+			
+	.pay-fines__offer
+		.block-description
+			p
+				width 280px
 		
 	.custom-page
 		.popup .btn__close svg
@@ -955,6 +968,10 @@
 		.popup__title
 			font-size 20px
 			line-height 26px
+			
+
+	.article-card__preview
+		font-size 15px
 			
 
 	
