@@ -609,7 +609,7 @@
 				
 
 .projects-slider-controls
-	margin-top 82px
+	margin-top 34px
 	position relative
 	display flex
 	justify-content center
@@ -688,11 +688,14 @@
 		img
 			display block
 			position absolute
-			width 558px
+			width 400px
 			bottom -64px
 			z-index 1
 			pointer-events none
-			right -160px
+			right -130px
+			
+			&.consultation-img-sm
+				width 
 		.sect__title
 			margin-bottom 16px
 		&-text
@@ -761,6 +764,8 @@
 	
 
 .consultation
+	position relative
+	z-index 2
 	&-text
 		max-width 263px
 		margin-bottom 16px
