@@ -37,10 +37,50 @@
 			bottom -2px
 			transform none
 			top auto
+			
+	.promo-img
+		position relative
+		top auto
+		transform none
+		left auto
+		margin 0 auto
+		height 510px
+		margin-top -310px
+		z-index -1
+		justify-content flex-end
+		margin-bottom 32px
 	
 	.custom-page	
+		.promo__row
+			flex-wrap wrap
 		.promo__content
 			max-width 100%
+			
+	.service-guaranties
+		&__row
+			flex-wrap wrap
+		&__title
+			width 100%
+			margin-right 0
+			
+		&__items
+			margin-left -8px
+			margin-right -8px
+			margin-bottom -16px
+			
+
+	.service-guaranty
+		&__item
+			font-size 14px
+			line-height 18.2px
+			div
+				padding 48px 16px 16px
+			&-img
+				left 16px
+			&-wrapper
+				padding-left 8px
+				padding-right 8px
+				margin-bottom 16px
 			
 
 	.services-handling
@@ -152,6 +192,15 @@
 			
 	.our-experience-item
 		width 25%
+		
+
+	.tasks-block
+		padding-right 32px
+		
+
+	.service-card-module__wrapper
+		flex 1 0 50%
+		
 			
 	.visible-tablet
 		display block !important
@@ -298,6 +347,32 @@
 			
 		&__order
 			margin-top 32px
+			
+
+	.service-scope__item-img
+		height 200px
+		
+
+	.service-advantages
+		&__row
+			flex-wrap wrap
+		&__text
+			width 100%
+		&__img
+			margin-left 0
+			margin-top 64px
+			
+
+
+	.tasks-block
+		padding-left 32px
+		img
+			position relative
+			transform none
+			left auto
+			top auto
+			margin-bottom 32px
+			
 		
 
 
@@ -330,6 +405,14 @@
 			top -50px
 			transform none
 			
+	.service-scope__item-wrapper
+		width 50%
+		
+	.service-scope__items-row
+		&.items-5
+			.service-scope__item-wrapper:first-child
+				width 100%
+			
 
 +max-screen(700px)
 	.our-experience-item
@@ -361,6 +444,9 @@
 			h2
 				font-sze 26px
 				line-height 30px
+				
+
+	
 			
 
 +max-screen(620px)
@@ -379,6 +465,33 @@
 		&:before
 			background linear-gradient(360deg, #ffffff 15%, rgba(196, 196, 196, 0) 87.3%)
 	
+	.promo__row
+		justify-content center
+		
+	.promo-img
+		width 385px
+		height 385px
+		margin-top -365px
+		margin-bottom 12px
+		display block
+		flex none
+		img
+			position absolute
+			top auto
+			horisontal-center()
+			bottom -10px
+			max-width 330px
+			max-height 310px
+			
+		
+		&:before
+			width 100%
+			height 100%
+			
+
+	.promo__subtitle
+		margin-top 0
+		
 	.custom-page
 		font-size 15px
 		line-height 18.8px
@@ -542,7 +655,7 @@
 		&__offer
 			.block-description
 				margin-bottom 16px
-				max-width calc(100% - 150px)
+				max-width calc(100% - 135px)
 			&-guaranties
 				background-color transparent
 				padding 0
@@ -559,6 +672,8 @@
 
 	.offer
 		margin-top 83px
+		&-no-margin
+			margin-top 0
 		.sect__title
 			font-size 16px
 			line-height 20.8px
@@ -976,8 +1091,151 @@
 
 	.article-card__preview
 		font-size 15px
+		
+
+	.promo-img__text
+		display none
+		
+	.promo-img__offset
+		overflow hidden
+		img
+			bottom -60px
+
+	.service-scope__item
+		display flex
+		align-items center
+		justify-content flex-start
+		font-size 14px
+		line-height 18.2px
+		&-img
+			width 22%
+			padding-top 22%
+			height auto
+			margin-bottom 0
+		
+		h3
+			flex 1
+			padding-left 32px
+		&-wrapper
+			width 100%
+			margin-bottom 16px
+			&:last-child
+				margin-bottom 0
 			
 
+	.service-scope__items-row
+		margin-bottom 0
+			
+		
+	
+	.service-advantages
+		&__row
+			flex-wrap wrap
+			position relative
+			.sect__title
+				padding-left 122px
+				min-height 106px
+				display flex
+				align-items center
+		&__text
+			width 100%
+		&__img
+			margin-top 0
+			width 106px
+			height 106px
+			position absolute
+			top 0
+			left 0
+			img
+				max-height 116px
+			
+
+
+	.sect__service-advantages
+		padding 32px 0
+		
+	.sect__service-guaranties,
+	.sect__service-scope
+		padding 64px 0
+		
+	.tasks-block
+		padding 21px 13px
+		.sect__title
+			min-height 81px
+			display flex
+			align-items center
+			padding-left 106px
+		img
+			width 93px
+			position absolute
+			top 21px
+			left 12px
+			margin-bottom 0
+			
+	.sect__tasks
+		padding 32px 0
+		
+
+	.sect__services-cards-module
+		padding-bottom 32px
+		
+	.service-card-module__wrapper
+		flex 1 0 100%
+		width 100%
+		.service-slide
+			background-color $white-color
+			display block
+			padding 16px
+			border-radius 8px
+			position relative
+			padding-left 90px
+			.title-h3
+				margin-bottom 8px
+			p
+				margin-bottom 16px
+				
+			.btn-ghost
+				display inline-block
+			&__img
+				position absolute
+				top 16px
+				left 16px
+				width 58px
+				height 58px
+				
+
+	.sect__service-scope + .sect__service-guaranties
+		padding-top 0
+		
+
+	.service-card-module__wrapper-lg
+		.service-slide
+			flex-direction column
+			padding 22px 40px
+			&__content
+				width 100%
+				margin-left 0
+			&__img
+				margin-bottom 16px
+				width 100%
+				flex none
+				position relative
+				top auto
+				left auto
+				height auto
+				
+			.title-h3,
+			p
+				font-size 14px
+				line-height 18.5px
+				
+			.btn-ghost
+				padding-left 16px
+				padding-right 16px
+				
+	.service-slide
+		p
+			font-family $Reg
 	
 
 	.visible-mobile

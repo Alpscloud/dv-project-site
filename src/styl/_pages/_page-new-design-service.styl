@@ -1,0 +1,221 @@
+.promo
+	&-service
+		.promo__content
+			max-width calc(100% - 502px)
+			flex none
+		.kp-offer
+			max-width 470px
+			
+		.title
+			max-width 620px
+			
+	
+	&__subtitle
+		margin-top -36px
+		margin-bottom 32px
+	
+	&-img
+		flex-col-center()
+	
+		position absolute
+		vertical-center()
+		left -70px
+		width 510px
+		height 510px
+		z-index -1
+		background rgba(255,255,255, 88.65%)
+		border-radius 50%
+		background linear-gradient(43.9deg, #6A6A6C -49.62%, #FFFFFF 88.65%)
+		&-fill
+			overflow hidden
+			img
+				width 100% !important
+				height 100% !important
+				max-height 100% !important
+				max-width 100% !important
+				object-fit cover !important
+			
+			
+		img
+			display block
+			width auto
+			max-width 630px
+			position absolute
+			position-center()
+			z-index 1
+			// width 630px
+
+				
+		&__offset
+				margin-top -33px
+			img
+				transform none
+				top auto
+				left auto
+				transform none
+				bottom -1px
+				
+		&__text
+			position absolute
+			bottom 0
+			left 0
+			background #F5F5F5
+			box-shadow 0px 15px 15px rgba(0, 0, 0, 0.05)
+			border-radius 8px
+			padding 40px 25px 25px 40px
+			font-family $Med
+			width 285px
+			z-index 1
+			
+			
+				
+
+.service-guaranties__title
+	width 335px
+	flex none
+	margin-right 67px
+	&-ic
+		width 241px
+		height 60px
+		background-repeat no-repeat
+		background-size contain
+		margin-bottom 40px
+
+.service-guaranties__items
+	margin-bottom -24px
+			
+.service-guaranty__item
+	height 100%
+	position relative
+	padding-top 32px
+	font-size 16px
+	line-height 24px
+	display flex
+	flex-direction column
+	div
+		border-radius 8px
+		padding 56px 24px 19px 24px
+		background-color $white-color
+		flex 1
+	&-img
+		display block
+		borderr-adius 50%
+		width 64px
+		height 64px
+		bg(50%, 50%)
+		position absolute
+		top 0
+		left 24px
+		z-index 1
+	&-wrapper
+		margin-bottom 24px
+		
+.service-scope__items-row
+	margin-bottom -30px
+	&.items-4
+		.service-scope__item-wrapper
+			width 50%
+	&.items-5
+		.service-scope__item-wrapper
+			&:first-child
+				width calc(100% - 33.3333%)
+	
+.service-scope__item
+	font 18px $Bold
+	height 100%
+	&-img
+		margin-bottom 32px
+		padding-top 0
+		height 280px
+	&-wrapper
+		margin-bottom 30px
+		width 33.3333%
+		
+		
+
+.offer.offer-no-margin
+	margin-bottom 0
+	
+.tasks-block
+	background-color $white-color
+	position relative
+	padding 64px 100px 44px 500px
+	img
+		display block
+		width 450px
+		position absolute
+		vertical-center()
+		left -30px
+		
+	p
+		font-family $Med
+		
+.service-advantages
+	&__img
+		position relative
+		width 506px
+		height 506px
+		flex-col-center()
+		flex none
+		margin-left 30px
+		&:before
+			pseudo()
+			position absolute
+			position-center()
+			width 100%
+			height 100%
+			border-radius 50%
+			background-color $white-color
+		img
+			@extends .content-img
+			position relative
+			z-index 1
+			max-width none
+			max-height 560px
+			
+
+.services-cards-module__row
+	margin-left -16px
+	margin-right -16px
+	margin-bottom -16px
+	
+.service-card-module__wrapper
+	flex 1 0 25%
+	padding-left 16px
+	padding-right 16px
+	margin-bottom 16px
+	&-lg
+		flex 1 0 75%
+		
+		.service-slide
+			flex-direction row
+			align-items center
+			p
+				font-size 18px
+				line-height 23.4px
+			.btn-ghost
+				padding-left 28px
+				padding-right 28px
+			.title-h3
+				font-size 18px
+				line-height 23.4px
+			&__img
+				flex 1
+				margin-bottom 0
+				height auto
+			&__content
+				width 320px
+				flex none
+				margin-left 50px
+		
+	.service-slide
+		height 100%
+		.title-h3
+			flex none
+		&:hover
+			.btn-ghost
+				background-color $secondary-color
+				color $white-color
+	
+.sect__service-guaranties + .sect__offer
+		padding-top 0

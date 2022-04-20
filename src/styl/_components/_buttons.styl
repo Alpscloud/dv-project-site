@@ -40,6 +40,7 @@
 		&:hover
 			background-color lighten($secondary-color, 7%)
 			border-color lighten($secondary-color, 7%)
+			transform scale(1.05, 1.05)
 		&-lg
 			padding-left 86.5px
 			padding-right 86.5px
@@ -117,9 +118,14 @@
 		font 12px $Reg
 		text-transform uppercase
 		color #E7E8E9
-		&:hover
-			border-color $secondary-color
-			color $secondary-color
+		&:hover,
+		&-accent
+			background-color $secondary-color
+			color $white-color !important
+		&-accent
+			&:hover
+				background-color $secondary-color
+				color $white-color !important
 			
 	&-permalink
 		text-align center
@@ -354,3 +360,10 @@
 	&.is-toggled
 		&:before
 			content attr(data-toggled-text)
+			
+
+@keyframes blick
+	0%
+		left -65%
+	100%
+		left 105%

@@ -210,6 +210,10 @@
 		
 
 .marker-list
+	p
+		margin-bottom 16px
+		&:last-child
+			margin-bottom 0
 	li
 		display block
 		margin-bottom 16px
@@ -804,6 +808,15 @@ a[href^="tel:"].page-contact-link
 	padding 23px 38px 32px 38px
 	display flex
 	flex-direction column
+	p
+		font-size 14px
+		line-height 18px
+		margin-bottom 32px
+		flex 1
+	&:hover
+		.btn-ghost
+			border-color $secondary-color
+			color $secondary-color
 	
 	&__img
 		height 152px
