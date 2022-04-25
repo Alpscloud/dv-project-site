@@ -903,10 +903,33 @@
 		&--body
 			padding 0 70px 85px 70px
 			display none
+			*:last-child
+				margin-bottom 0
 			p
 				margin-bottom 10px
 				&:last-child
 					margin-bottom 0
+					
+			ol,
+			ul
+				margin-bottom 10px
+				li
+					display block
+					margin-bottom 10px
+			
+			ol
+				counter-reset list
+				li
+					position relative
+					&:before
+						counter-increment list
+						content counter(list) ". "
+						margin-right 4px
+						
+			a
+				color currentColor
+				text-decoration underline
+					
 					
 		&.is-toggled
 			.faq

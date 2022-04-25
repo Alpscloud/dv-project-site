@@ -10,8 +10,7 @@
 */
 
 +max-screen(1400px)
-	.sect__promo-bg:before
-		background linear-gradient(90deg,#fff 40%,rgba(196,196,196,0) 88.43%)
+
 		
 	.about-us__content
 		margin-left 50px
@@ -25,18 +24,35 @@
 				left 0
 			&__next
 				right 0
+				
++max-screen(1280px)
+	.sect__promo-bg
+		right 400px
+		&:before
+			background linear-gradient(90deg,#fff 40%,rgba(196,196,196,0) 88.43%)
+	
 		
 +max-screen(1100px)
 	.sect__promo-bg
 		width 100%
 		height 250px
 		top 0
+		bottom auto
+		right auto
+		left 0
 		&:before
 			background linear-gradient(360deg, #ffffff 38.45%, rgba(196, 196, 196, 0) 87.3%)
 			right 0
 			bottom -2px
 			transform none
 			top auto
+			width 100%
+			
+
+			
+	.custom-page
+		.promo
+			position static
 			
 	.promo-img
 		position relative
@@ -306,7 +322,7 @@
 			flex-wrap wrap
 			
 	.articles-cards__row
-		width 100%
+	
 		flex none
 		margin-bottom 0
 		
@@ -413,6 +429,9 @@
 			.service-scope__item-wrapper:first-child
 				width 100%
 			
+
+	.article-card__wrapper
+		width 100%
 
 +max-screen(700px)
 	.our-experience-item
@@ -879,9 +898,6 @@
 			
 				
 	.blog
-		background-color $white-color
-		border-radius 8px
-		padding 16px 16px 25px 16px
 		.sect__title
 			margin-bottom 25px
 			

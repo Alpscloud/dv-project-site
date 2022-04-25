@@ -58,6 +58,9 @@
 			margin-bottom 32px
 			li
 				margin-bottom 16px
+				
+	.promo
+		position relative
 		
 	.title
 		font 32px $Reg
@@ -146,10 +149,11 @@
 
 .sect__promo-bg
 	position absolute
-	left 0
-	top 0
-	height 100%
-	width 945px
+	//left 0
+	right 570px
+	top -100px
+	bottom -40px
+	width 1000px
 	background-position 50% 50%
 	background-repeat no-repeat
 	background-size cover
@@ -159,7 +163,7 @@
 		pseudo()
 		position absolute
 		top 0
-		width 100%
+		width 40%
 		height 100%
 		background linear-gradient(90deg, #ffffff 12%, rgba(196, 196, 196, 0) 88.43%)
 		transform scaleX(-1)
@@ -379,6 +383,7 @@
 					width 145px
 				.title-h3
 					margin-bottom 0
+					font-family $Reg
 		
 		
 	&__img
@@ -542,6 +547,10 @@
 .project-slide
 	border-radius 8px
 	overflow hidden
+	&:hover
+		.btn-ghost
+			border-color $secondary-color
+			color $secondary-color
 	.btn-ghost
 		margin-top 12px
 	&__thumbnail
@@ -821,6 +830,7 @@ a[href^="tel:"].page-contact-link
 	&__img
 		height 152px
 		margin-bottom 12px
+		flex-col-center()
 		img
 			@extends .content-img
 			margin 0
@@ -928,15 +938,44 @@ a[href^="tel:"].page-contact-link
 		&:last-child
 			margin-bottom 0
 			
+	a
+		color currentColor
+		text-decoration underline
+		&:hover
+			color $secondary-color
+			
 	p	+ h2,
 	p + h3
 		margin-top 62px
+		
+	p + ul
+		margin-top -16px
+		
+	ul
+		margin-bottom 32px
+		&:last-child
+			margin-bottom 0
+		li
+			margin-bottom 16px
+			position relative
+			padding-left 24px
+			&:before
+				pseudo()
+				width 8px
+				height 8px
+				position absolute
+				top 7px
+				left 0
+				background-color $secondary-color
+				border-radius 50%
+			&:last-child
+				margin-bottom 0
 		
 .sect__blog
 	padding-bottom 112px
 	
 .blog-link
-	margin-top 103px
+	margin-top 64px
 	
 
 	
@@ -953,7 +992,7 @@ a[href^="tel:"].page-contact-link
 	.thumbnail
 		display block
 		border-radius 8px
-		padding-top 75%
+		padding-top 82%
 		margin-bottom 16px
 		
 	&__preview
