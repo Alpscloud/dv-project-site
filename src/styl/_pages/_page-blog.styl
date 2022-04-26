@@ -1,0 +1,95 @@
+
+.article-card__wrapper
+	width 33.3333%
+
+.page-blog.sect__promo
+	padding-bottom 80px
+	.article-card
+		&__wrapper
+			&:first-child
+				width calc(100% - 33.33333%)
+				.thumbnail
+					padding-top 50%
+			&:nth-child(3),
+			&:nth-child(4)
+				width 50%
+				
+				.thumbnail
+					padding-top 66%
+					
+
+.sect__article
+	padding-top 30px
+	
+
+.article
+	flex 1
+	&__row
+		border-bottom 1px solid $border-block-color
+	&-title
+		font 32px $Reg
+		line-height 42px
+		margin-bottom 8px
+	
+	.content
+		font 16px $Reg
+		line-height 21px
+		&:first-child
+			margin-top 0
+		&:last-child
+			margin-bottom 0
+			
+		h2,h3
+			font 18px $Med
+			line-height 23px
+			margin-bottom 16px
+			text-transform none
+			
+		a
+			&:hover
+				color $secondary-color
+				
+		img
+			display block
+			margin 32px 0
+			width 100%
+			height auto
+			border-radius 8px
+			
+		hr
+			display block
+			height 1px
+			background-color $block-bg
+			border none
+			margin 32px 0
+			
+		ol
+			counter-reset list
+			li
+				position relative
+				&:before
+					counter-increment list
+					content counter(list) ". "
+					margin-right 4px
+					color $secondary-color
+					font-family $Med
+			
+		ul
+			margin-bottom 32px
+			&:last-child
+				margin-bottom 0
+			li
+				margin-bottom 16px
+				position relative
+				padding-left 24px
+				&:before
+					pseudo()
+					width 8px
+					height 8px
+					position absolute
+					top 7px
+					left 0
+					background-color $secondary-color
+					border-radius 50%
+				&:last-child
+					margin-bottom 0

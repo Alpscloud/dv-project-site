@@ -47,6 +47,8 @@
 		padding-top 30px
 		padding-bottom 40px
 		min-height auto
+		&.alternate-color-bg
+			background-color $alternate-color-bg
 		
 	.promo__content
 		max-width 570px
@@ -950,6 +952,17 @@ a[href^="tel:"].page-contact-link
 		
 	p + ul
 		margin-top -16px
+		
+	ol
+		counter-reset list
+		li
+			position relative
+			&:before
+				counter-increment list
+				content counter(list) ". "
+				margin-right 4px
+				color $secondary-color
+				font-family $Med
 		
 	ul
 		margin-bottom 32px

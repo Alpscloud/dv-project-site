@@ -217,6 +217,18 @@
 	.service-card-module__wrapper
 		flex 1 0 50%
 		
+	.article
+		&__row
+			flex-wrap wrap
+			
+	.aside
+		width 100%
+		margin-left 0
+		margin-top 32px
+		
+		img
+			display none
+		
 			
 	.visible-tablet
 		display block !important
@@ -429,9 +441,15 @@
 			.service-scope__item-wrapper:first-child
 				width 100%
 			
-
-	.article-card__wrapper
-		width 100%
+	.article-card__wrapper,
+	.page-blog .article-card__wrapper
+		width 100% !important
+		
+		.thumbnail
+			padding-top 82% !important
+			
+	.page-blog.sect__promo
+		padding-bottom 60
 
 +max-screen(700px)
 	.our-experience-item
@@ -465,8 +483,7 @@
 				line-height 30px
 				
 
-	
-			
+				
 
 +max-screen(620px)
 	
@@ -1252,6 +1269,11 @@
 	.service-slide
 		p
 			font-family $Reg
+			
+
+	.custom-page 
+		.page-blog
+			padding-top 30px
 	
 
 	.visible-mobile
